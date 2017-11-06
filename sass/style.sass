@@ -1,0 +1,88 @@
+@import 'partial/reset'
+@import 'partial/media'
+
+html
+  font-family: Play
+  font-size: 100%
+
+body
+  background: white
+
+a
+  color: white
+  text-decoration: none
+
+  &:hover
+    color: blue
+
+#header
+  .logo
+    float: left
+    display: inline-block
+    background-image: url('/images/logo.png')
+    background-repeat: no-repeat
+    background-size: contain
+    width: 4rem
+    height: 4rem
+    margin: 1rem
+  .menu
+    margin: 1rem
+    float: right
+    display: inline-block
+    a
+      padding: 1rem
+      display: inline-block
+      border: 0.05rem solid white
+      margin-left: 1em
+      border-radius: 0.33rem
+
+.section
+  &.hero
+    background-image: url('/images/background.jpg')
+    background-repeat: no-repeat
+    background-size: cover
+    color: white
+
+    +cell
+      background-image: url('/images/background-c.jpg')
+      background-position: center
+
+    +tablet
+      background-position: -250px
+
+    >.text
+      position: absolute
+      bottom: 10px
+      padding: 2em
+      >.fullname
+        font-size: 4rem
+        font-family: 'Nothing You Could Do', cursive
+      >.position
+        font-size: 3rem
+        font-family: 'Nothing You Could Do', cursive
+      >.button
+        display: inline-block
+        border: 1px solid white
+        padding: 1rem
+        margin-left: 26rem
+
+      +cell
+        >.text
+        background-color: rgba(0,0,0, 0.5)
+        padding: 0.5em
+        position: block
+        bottom: 0px
+        box-sizing: border-box
+        width: 100%
+        >.fullname
+          text-align: center
+          font-size: 1.3rem
+          font-weight: bold
+        >.position
+          text-align: center
+          font-size: 1.3rem
+        >.button
+          display: block
+          text-align: center
+          padding: 0.3rem
+          margin: 0rem

@@ -1,0 +1,11 @@
+extends layout
+
+block body
+    div#fullpage
+        div.section.hero(data-centered="false")
+            include ./section/hero
+        div.section Some section 2 1
+        div.section Some section 3
+        div.section Some section 4
+        div(class="section contact")
+            include ./section/contact
