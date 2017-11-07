@@ -1,8 +1,8 @@
 
 div.text
-  div.fullname Viktor Shelepen
-  div.position Fullstack Web Developer
+  div.fullname= section.hero[lng].fullname
+  div.position= section.hero[lng].position
   div.button
-    a(href='#contactPage') Contact Me
+    a(href='#contactPage')= section.hero[lng].button
 
 include ../component/header
