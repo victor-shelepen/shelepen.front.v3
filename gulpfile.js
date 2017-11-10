@@ -5,6 +5,7 @@ var
   reload = browserSync.reload,
   sass = require('gulp-sass'),
   yaml = require('yamljs'),
+  lodash = require('lodash'),
   webpack = require('webpack-stream');
 
 gulp.task('sass', function () {
@@ -25,17 +26,17 @@ gulp.task('jade', function() {
   data.section.hero = yaml.load('./yaml/section/hero.yaml');
 
   function compile(data, lng) {
-    data.lng = lng;
-    gulp.src('./jade/index.jade')
+    let locals = lodash.cloneDeep(data);
+    locals.lng = lng;
+    return gulp.src('./jade/index.jade')
       .pipe(jade({
         pretty: true,
-        locals: data
+        locals: locals
       }))
       .pipe(gulp.dest('./www/' + lng))
       .pipe(reload({stream: true}));
   }
-
-  compile(data, 'en');
+  compile(data, 'en')
   compile(data, 'ru');
 });
 
