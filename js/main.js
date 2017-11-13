@@ -1,6 +1,7 @@
 //import $ from  'jquery';
 
 //import './test';
+// ss
 
 $(document).ready(() => {
   $('#fullpage').fullpage({

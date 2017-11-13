@@ -1,12 +1,21 @@
 @import 'partial/reset'
 @import 'partial/media'
 
+=title
+  font-size: 2rem
+  font-family: 'Nothing You Could Do', cursive
+
+=subtitle
+  font-size: 1.5rem
+  font-family: 'Nothing You Could Do', cursive
+
 html
   font-family: Play
   font-size: 100%
 
 body
   background: white
+  color: white
 
 a
   color: white
@@ -86,3 +95,65 @@ a
           text-align: center
           padding: 0.3rem
           margin: 0rem
+
+  &.about-me
+    >.container
+      display: flex
+      flex-direction: row
+      flex-wrap: wrap
+      justify-content: center
+      align-items: flex-start
+      height: 100%
+
+      >.title
+        background: green
+        width: 100%
+      >.subtitle
+        background: blue
+        width: 100%
+      >.personal
+        flex: 1 1
+        background: yellow
+      >.photo
+        background-image: url('/images/sctn-about-me-center.jpg')
+        background-repeat: no-repeat
+        height: 100%
+        background-size: contain
+        flex: 1 1
+      >.professional
+        flex: 1 1
+        background: navajowhite
+
+
+  &.contact
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+    justify-content: center
+    align-items: center
+    height: 100%
+    background-image: url('/images/sctn-contact-bg.jpg')
+    background-repeat: no-repeat
+    background-size: cover
+
+    >.container
+      background-color: rgba(0, 0, 0, 0.5)
+      display: flex
+      flex-direction: column
+      flex-wrap: wrap
+      justify-content: center
+      align-items: center
+
+      >.title
+        +title
+
+      >.subtitle
+        +subtitle
+
+      >.contacts
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        justify-content: center
+        align-items: center
+

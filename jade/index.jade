@@ -2,10 +2,13 @@ extends layout
 
 block body
     div#fullpage
-        div.section.hero(data-centered="false")
+        div.section.hero
             include ./section/hero
-        div.section Some section 2 1
-        div.section Some section 3
-        div.section Some section 4
+        div.section.about-me
+            include ./section/about-me
+        div.section.resume
+            include ./section/resume
+        div.section.portfolio
+            include ./section/portfolio
         div(class="section contact")
             include ./section/contact

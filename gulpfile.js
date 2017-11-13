@@ -21,10 +21,12 @@ gulp.task('jade', function() {
     section: {},
     component: {}
   };
-
   data.component.header = yaml.load('./yaml/component/header.yaml');
   data.section.hero = yaml.load('./yaml/section/hero.yaml');
-
+  data.section.aboutMe = yaml.load('./yaml/section/about-me.yaml');
+  data.section.resume = yaml.load('./yaml/section/resume.yaml');
+  data.section.portfolio = yaml.load('./yaml/section/portfolio.yaml');
+  data.section.contact = yaml.load('./yaml/section/contact.yaml');
   function compile(data, lng) {
     let locals = lodash.cloneDeep(data);
     locals.lng = lng;
@@ -37,7 +39,7 @@ gulp.task('jade', function() {
       .pipe(reload({stream: true}));
   }
   compile(data, 'en')
-  compile(data, 'ru');
+  // compile(data, 'ru');
 });
 
 gulp.task('js', function() {
