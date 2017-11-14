@@ -58,3 +58,5 @@ gulp.task('serve', function () {
   gulp.watch('./js/**/*.js', ['js']);
   gulp.watch('./yaml/**/*.yaml', ['js', 'jade']);
 });
+
+gulp.task('default', [ 'sass', 'jade', 'js' ]);
