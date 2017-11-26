@@ -1,18 +1,16 @@
 en:
   title: About me
   subtitle: Let's get friends.
-  personal:
-    >
-      Hello. My name is Victor. I am 32 years old. I am married,
-      I have a daughter. I am an open-minded and easy going person.
-      I like challenging and tough tasks. I like engineering, painting, flowering.
-      I visit a fitness club on a regular basis.
-  professional:
-    >
-      I've got very wide professional experience in different branches.
-      Now I am full-stack NodeJS developer. I like project kind of jobs.
-      I handle all software development stages. I am not the best.
-      And I do not want to do it. Also I have own disadvantages.
-      My real advantage for you is that I am multi-professional,
-      multi-technological employer in the single person that can handle and manage
-      your IT problems with specified quality.
+  personal: >
+    Hello. My name is Victor. I am 32 years old. I am married,
+    I have a daughter. I am an open-minded and easy going person.
+    I like challenging and tough tasks. I like engineering, painting, flowering.
+    I visit a fitness club on a regular basis.
+  professional: >
+    I've got very wide professional experience in different branches.
+    Now I am full-stack NodeJS developer. I like project kind of jobs.
+    I handle all software development stages. I am not the best.
+    And I do not want to do it. Also I have own disadvantages.
+    My real advantage for you is that I am multi-professional,
+    multi-technological employer in the single person that can handle
+    and manage your IT problems with specified quality.
