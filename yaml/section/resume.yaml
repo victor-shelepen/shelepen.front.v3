@@ -1,0 +1,89 @@
+en:
+  hypernaut:
+    position: Drupal developer
+    company: Hypernaut
+    place: Kyiv
+    period: January 2017 - February 2017, 2 months
+    description: >
+      I worked on a Drupal project as a part of the team.
+      It was a specific project that was integrated with another service.
+      I did a lot of custom functionality , those were based on Drupal framework:
+      Menu API, FAPI, a lot of ajax forms, a payment system, of course another stuff
+      that was common for a drupal developer.
+  ffw:
+    position: Drupal developer
+    company: FFW
+    place: Remote
+    period: June 2016 - October 2016, 5 months
+    description: >
+      I worked in the distributed team from home as a support developer.
+      I worked with few projects at once. These projects were big portals based on Drupal 7 and Drupal 8.
+      Team and project management processes were implemented properly. Also I got a Drupal 7 project for redesigning.
+      I worked as a back-end developer. Here we used a lot of different techniques of project development.
+      At first it was hard then it became easier. I felt as an item of a big system.
+      Everything became predictable with strict risks.
+      I’ve got good and wide experience of working in the team and knowledge of management(team, project, code, ...) here.
+  speroteck:
+    position: Drupal developer
+    company: Hypernaut
+    place: Kyiv
+    period: June 2016 - October 2016, 5 months
+    description: >
+      I had to work as a Magento back- end Developer but I did everything related with development.
+      I worked with Magento: Export/Import product processes, Integration with third-party services,
+      resolved Magento performance issues, studied Magento2. Also I studied BigCommerce, SalesForce there.
+      A lot of time I worked with an internal project that was built on technologies: Silex, Symfony, Bootstrap.
+  divantv:
+    position: Javascript, PHP developer
+    company: Divan.TV
+    place: Chernigov
+    period: May 2015 - July 2015, 3 months
+    description: >
+      I developed the HTML5 based, hybrid application for Smart TV for different platforms.
+      I refactored the existed code base and developed new functionality in the existing application.
+      During the period I was using low level Web technologies such as HTML, CSS, Javascript.
+  ciklum:
+    position: Middle Drupal developer
+    company: Ciklum
+    place: Kyiv
+    period: October 2014 - December 2014, 3 months
+    description: >
+      I worked in a team of Drupal front-end and back-end developers.
+      I was a member of a team and resolved tasks, planned by our manager from Denmark side.
+      I used their approaches and tools to build projects. We used a lot of panels based solutions.
+  w3:
+    position: CMS Developer
+    company: W3
+    place: Charkov
+    period: June 2014 - July 2015, 2 months
+    description: >
+      I worked at client feedbacks of the existed Drupal based, long term projects.
+      There were few projects, where I investigated problems, proposed solutions, implemented these solutions.
+      I did not work with clients directly. We used AGILE - the management style of the project.
+      So I worked with the project manager tightly.
+  skelia:
+    position: Senior drupal PHP Developer
+    company: Skelia
+    place: Kyiv
+    period: August 2012 - July 2013, 1 year
+    description: >
+      The company specialized in sports coaching.
+      I was responsible for supporting of the current state of code, fixing, developing new features.
+      The project was built on Drupal 6, using another contribute modules.
+      There were built a lot of custom modules these represented business processes managing different kinds of sport.
+      I got the practice in cooperating with foreign customers. It made my English level higher.
+      I traveled abroad for bussiness.
+  adyax:
+    position: Drupal developer
+    company: Adyax
+    place: Kyiv
+    period: March 2012 - August 2012, 5 months
+    description: >
+      I had been working as a Drupal developer for 7 monthes.
+      The development process looked as a factory.
+      Everybody had own responsibilities.
+      We used Drupal 6 and the best practicees, that company had for this time.
+      I was a developer in the team, that supported “Johnson&Johnson” projects.
+      It was a good example of corporate products, many small projectes related with each other
+      and based on common platform (Drupal multisiting, Aegir, another common performance technologies).
+      I received the huge experience there: how work in a team with separate responsibilities, control results.

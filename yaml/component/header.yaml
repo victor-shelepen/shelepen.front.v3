@@ -2,6 +2,10 @@ en:
   menu:
     home: Home
     contact: Contact
+    aboutMe: About Me
+    resume: Resume
+    services: Services
+    contact: Contact
 ru:
   menu:
     home: Главная

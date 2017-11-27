@@ -1,11 +1,7 @@
-div.slide
-  div.position Drupal developer
-  div.company-name Hypernaut
-  div.place Kyiv
-  div.period 2 monthes
-  div
-  | I worked on a Drupal project as a part of the team. It was a specific project that was integrated with another service. I did a lot of custom functionality , those were based on Drupal framework: Menu API, FAPI, a lot of ajax forms, a payment system, of course another stuff that was common for a drupal developer.
-div.slide Slide 2
-div.slide Slide 3
-div.slide Slide 4
-div.slide Slide 5
+for position in section.resume[lng]
+  div.slide
+    div.position= position.position
+    div.company-name= position.company
+    div.place= position.place
+    div.period= position.period
+    div= position.description
