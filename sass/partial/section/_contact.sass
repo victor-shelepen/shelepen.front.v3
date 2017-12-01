@@ -1,0 +1,69 @@
+.section
+  &.contact
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+    justify-content: center
+    align-items: center
+    height: 100%
+    background-repeat: no-repeat
+    background-size: cover
+
+    +portrait
+      background-image: url('/images/sctn-contact-bg.jpg')
+    +landscape
+      background-image: url('/images/sctn-contact-bg-ls.jpg')
+
+    >.container
+      background-color: rgba(0, 0, 0, 0.5)
+      display: flex
+      flex-direction: column
+      flex-wrap: wrap
+      justify-content: center
+      align-items: center
+      margin: 1em
+      padding: 1em
+
+      >.title
+        +title
+
+      >.subtitle
+        +subtitle
+
+      >.contacts
+        display: flex
+        flex-direction: column
+        flex-wrap: wrap
+        justify-content: center
+        align-items: center
+
+        .social
+          >a
+            width: 0
+            height: 0
+            &:before
+              content: ''
+              display: inline-block
+              background-image: url(/images/socials/drupal.svg)
+              background-size: cover
+              width: 32px
+              height: 32px
+
+            &.drupal:before
+              background-image: url(/images/socials/drupal.svg)
+              background-size: cover
+            &.twitter:before
+              background-image: url(/images/socials/twitter.svg)
+              background-size: cover
+            &.facebook:before
+              background-image: url(/images/socials/facebook.svg)
+              background-size: cover
+            &.linkedin:before
+              background-image: url(/images/socials/linkedin.svg)
+              background-size: cover
+            &.github:before
+              background-image: url(/images/socials/github.svg)
+              background-size: cover
+            &.stackoverflow:before
+              background-image: url(/images/socials/stackoverflow.svg)
+              background-size: cover
