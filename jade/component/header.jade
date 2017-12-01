@@ -1,8 +1,10 @@
 div#header
-  div.logo
+  div.material-icons.logo timelapse
+  div.material-icons.mobile-menu-button menu
   div.menu
-    a(href="#homePage")= component.header[lng].menu.home
-    a(href="#aboutMePage")= component.header[lng].menu.aboutMe
-    a(href="#resumePage")= component.header[lng].menu.resume
-    a(href="#servicesPage")= component.header[lng].menu.services
-    a(href="#contactPage")= component.header[lng].menu.contact
+    div.material-icons.close-button arrow_back
+    div.link(data-href="heroPage")= component.header[lng].menu.home
+    div.link(data-href="aboutMePage")= component.header[lng].menu.aboutMe
+    div.link(data-href="resumePage")= component.header[lng].menu.resume
+    div.link(data-href="servicesPage")= component.header[lng].menu.services
+    div.link(data-href="contactPage")= component.header[lng].menu.contact

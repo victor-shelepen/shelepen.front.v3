@@ -1,13 +1,14 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons')
+
 @import 'partial/reset'
 @import 'partial/media'
-
-=title
-  font-size: 2rem
-  font-family: 'Nothing You Could Do', cursive
-
-=subtitle
-  font-size: 1.5rem
-  font-family: 'Nothing You Could Do', cursive
+@import 'partial/core'
+@import 'partial/component/header'
+@import 'partial/section/hero'
+@import 'partial/section/about-me'
+@import 'partial/section/resume'
+@import 'partial/section/services'
+@import 'partial/section/contact'
 
 html
   font-family: Play
@@ -23,166 +24,3 @@ a
 
   &:hover
     color: blue
-
-#header
-  .logo
-    float: left
-    display: inline-block
-    background-image: url('/images/logo.png')
-    background-repeat: no-repeat
-    background-size: contain
-    width: 4rem
-    height: 4rem
-    margin: 0.5rem
-  .menu
-    margin: 0.5rem
-    float: right
-    display: inline-block
-    a
-      padding: 0.5rem
-      display: inline-block
-      border: 0.05rem solid white
-      margin-left: 0.5rem
-      border-radius: 0.33rem
-
-.section
-  &.hero
-    background-image: url('/images/background.jpg')
-    background-repeat: no-repeat
-    background-size: cover
-    color: white
-
-    +cell
-      background-image: url('/images/background-c.jpg')
-      background-position: center
-
-    +tablet
-      background-position: -250px
-
-    >.text
-      position: absolute
-      bottom: 10px
-      padding: 2em
-      >.fullname
-        font-size: 4rem
-        font-family: 'Nothing You Could Do', cursive
-      >.position
-        font-size: 3rem
-        font-family: 'Nothing You Could Do', cursive
-      >.button
-        display: inline-block
-        border: 1px solid white
-        padding: 1rem
-        margin-left: 26rem
-
-      +cell
-        >.text
-        background-color: rgba(0,0,0, 0.5)
-        padding: 0.5em
-        position: block
-        bottom: 0px
-        box-sizing: border-box
-        width: 100%
-        >.fullname
-          text-align: center
-          font-size: 1.3rem
-          font-weight: bold
-        >.position
-          text-align: center
-          font-size: 1.3rem
-        >.button
-          display: block
-          text-align: center
-          padding: 0.3rem
-          margin: 0rem
-
-  &.about-me
-    display: flex
-    flex-direction: row
-    flex-wrap: wrap
-    justify-content: center
-    align-items: center
-
-    >.container
-      display: flex
-      flex-direction: row
-      flex-wrap: wrap
-      justify-content: center
-      align-items: flex-start
-      //height: 100%
-      width: 80rem
-
-      >.title
-        font-size: 4rem
-        font-family: 'Nothing You Could Do', cursive
-        flex: 1 1 100%
-      >.subtitle
-        background: blue
-        flex: 1 1 100%
-      >.personal
-        flex: 1 1 33%
-        background: yellow
-      >.photo
-        background-image: url('/images/sctn-about-me-center.jpg')
-        background-repeat: no-repeat
-        height: 100%
-        background-size: contain
-        flex: 1 1 33%
-      >.professional
-        flex: 1 1 33%
-        background: navajowhite
-
-  &.services
-    background: blue
-    color: red
-    display: flex
-    align-items: center
-    align-content: center
-
-
-    >.container
-      margin: 2rem
-      display: flex
-      flex-direction: row
-      flex-wrap: wrap
-      background: green
-      >.service
-        flex: 1 1 50%
-        >.title
-
-        >.content
-
-
-
-  &.contact
-    display: flex
-    flex-direction: column
-    flex-wrap: wrap
-    justify-content: center
-    align-items: center
-    height: 100%
-    background-image: url('/images/sctn-contact-bg.jpg')
-    background-repeat: no-repeat
-    background-size: cover
-
-    >.container
-      background-color: rgba(0, 0, 0, 0.5)
-      display: flex
-      flex-direction: column
-      flex-wrap: wrap
-      justify-content: center
-      align-items: center
-
-      >.title
-        +title
-
-      >.subtitle
-        +subtitle
-
-      >.contacts
-        display: flex
-        flex-direction: row
-        flex-wrap: wrap
-        justify-content: center
-        align-items: center
-

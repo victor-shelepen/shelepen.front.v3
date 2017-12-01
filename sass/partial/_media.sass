@@ -1,9 +1,21 @@
+=landscape
+  @media (orientation: landscape)
+    @content
+
+=portrait
+  @media (orientation: portrait)
+    @content
+
 =cell
   @media all and (max-width: 600px)
     @content
 
 =tablet
   @media all and (min-width: 601px) and (max-width: 959px)
+    @content
+
+=tabletAnd
+  @media all and (min-width: 601px)
     @content
 
 =desktop

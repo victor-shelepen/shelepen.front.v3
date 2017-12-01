@@ -1,7 +1,6 @@
 for position in section.resume[lng]
   div.slide
-    div.position= position.position
-    div.company-name= position.company
-    div.place= position.place
-    div.period= position.period
-    div= position.description
+    div.inner
+      div.company-name-position= position.position + ' at ' + position.company
+      div.place-period= position.place + ' - ' + position.period
+      div.description= position.description
