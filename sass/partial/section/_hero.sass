@@ -1,50 +1,51 @@
 .section
   &.hero
-    background-image: url('/images/background.jpg')
     background-repeat: no-repeat
     background-size: cover
     color: white
+    background-image: url('/images/background-c.jpg')
+    background-position: center
 
-    +cell
-      background-image: url('/images/background-c.jpg')
-      background-position: center
-
-    +tablet
-      background-position: -250px
+    +desktop
+      background-image: url('/images/background.jpg')
 
     >.text
+      background-color: rgba(0,0,0, 0.5)
+      padding: 0.5em
       position: absolute
-      bottom: 10px
-      padding: 2em
+      bottom: 0px
+      box-sizing: border-box
+      width: 100%
       >.fullname
-        font-size: 4rem
-        font-family: 'Nothing You Could Do', cursive
+        text-align: center
+        font-size: 1.3rem
+        font-weight: bold
       >.position
-        font-size: 3rem
-        font-family: 'Nothing You Could Do', cursive
+        text-align: center
+        font-size: 1.3rem
       >.button
-        display: inline-block
+        display: block
         border: 1px solid white
-        padding: 1rem
-        margin-left: 26rem
+        text-align: center
+        padding: 0.3rem
+        margin: 0rem
 
-      +cell
-        >.text
-        background-color: rgba(0,0,0, 0.5)
-        padding: 0.5em
-        position: block
-        bottom: 0px
-        box-sizing: border-box
-        width: 100%
+      +desktop
+       background: transparent
+
+    +desktop
+      >.text
+        position: absolute
+        bottom: 10px
+        padding: 2em
+        text-align: center
         >.fullname
-          text-align: center
-          font-size: 1.3rem
-          font-weight: bold
+          font-size: 2rem
+          font-family: 'Nothing You Could Do', cursive
         >.position
-          text-align: center
-          font-size: 1.3rem
+          font-size: 1rem
+          font-family: 'Nothing You Could Do', cursive
         >.button
-          display: block
-          text-align: center
-          padding: 0.3rem
-          margin: 0rem
+          display: inline-block
+          padding: .5rem
+          font-size: 1rem

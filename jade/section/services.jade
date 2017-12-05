@@ -1,5 +1,6 @@
 div.container
-  for service in section.services[lng]
+  div.title= section.services[lng].title
+  for service in section.services[lng].services
     div.service
       div.title= service.title
       div.content= service.content
