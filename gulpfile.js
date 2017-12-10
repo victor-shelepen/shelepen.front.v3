@@ -39,7 +39,7 @@ gulp.task('jade', function() {
       .pipe(reload({stream: true}));
   }
   compile(data, 'en')
-  // compile(data, 'ru');
+  compile(data, 'ru');
 });
 
 gulp.task('js', function() {

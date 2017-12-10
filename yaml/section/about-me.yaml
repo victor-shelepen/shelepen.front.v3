@@ -1,6 +1,6 @@
 en:
   title: About me
-  subtitle: Let's get friends.
+  subtitle: Let's get friends
   personal: >
     Hello, my name is Victor. I am 32 years old. I am married,
     I have a daughter. I am an open-minded and easy going person.
@@ -14,3 +14,14 @@ en:
     My real advantage for you is that I am multi-professional,
     multi-technological employer in the single person that can handle
     and manage your IT problems with specified quality.
+ru:
+  title: Обо мне
+  subtitle: Давайте дружить
+  personal: >
+    Здравствуйте, меня зовут Виктор, мне 32 года, есть дочка. Я спокойная и непредубежденная личность. Мне нравяться
+    тяжелые, запутаные задачи. Мне нравиться конструирование, рисование, цветоводство. Посещаю тренажерный зал.
+  professional: >
+    Я получил много профессионального опыта в различных областях деятельности. Сейчас я full-stack NodeJS разработчик.
+    Мне нравится попроектое сотрудничество, справляюсь со всеми этапами разработки. Я не лучший и у меня есть
+    свои недостатки. Мое основное приимущество в том, что у меня есть опыт и знания во многийх областях знаний
+    и я самостоятельно могу управлять и решать Ваши IT задачи с определенным уровнем качества самостоятельно.
