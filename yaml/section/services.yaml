@@ -11,7 +11,7 @@ en:
       title: Web apps
       content: We design and develop custom web apps to make your ideas work.
     mobile_app:
-      title: Mobile apps.
+      title: Mobile apps
       content: We create native and cross platform iOS and Android apps to make your business mobile.
     dev_ops:
       title: Dev Ops
@@ -24,19 +24,19 @@ ru:
   services:
     design:
       title: Дизайн
-      content: Предостовляем свой опыт в разработке дизайн для Web и мобильный решений, которые нравятся нашим клиентам
+      content: Предоставляем свой опыт в разработке дизайна для Web и мобильных решений, которые нравятся вашим клиентам
     prototype:
       title: Прототипирование приложений
-      content: Создаем прототипы приложений, которые помогают уловить идею вашими инвесторами
+      content: Создаем прототипы приложений, которые помогают уловить идею вашим инвесторам
     web_app:
       title: Интернет приложения
       content: Проектируем и разрабатываем интернет приложения, заставляя работать ваши идеи
     mobile_app:
-      title: Мобильные приложения.
-      content: Создаем родные и кросс-платформенные IOS, Android приложения, делая ваш бизнес мобильным
+      title: Мобильные приложения
+      content: Создаем родные и кросс-платформенные iOS, Android приложения, делая ваш бизнес мобильным
     dev_ops:
       title: Dev Ops
       content: Автоматизируем процесс доставки измений и изменения инфраструктуры, ускоряя процесс обновления продукта
     qa:
-      title: QA
+      title: Тестирование
       content: Обеспечиваем переодический выход приложения, получая позитивный отзыв от клиентов
