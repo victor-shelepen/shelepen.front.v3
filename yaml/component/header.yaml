@@ -14,3 +14,11 @@ ru:
     resume: Резюме
     services: Услуги
     contact: Контакты
+uk:
+  menu:
+      home: Домашня
+      contact: Контакти
+      aboutMe: Про мене
+      resume: Резюме
+      services: Послуги
+      contact: Контакти
