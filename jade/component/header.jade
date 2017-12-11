@@ -8,3 +8,9 @@ div#header
     div.link(data-href="resumePage")= component.header[lng].menu.resume
     div.link(data-href="servicesPage")= component.header[lng].menu.services
     div.link(data-href="contactPage")= component.header[lng].menu.contact
+    if lng != 'en'
+      div.link
+        a.link(href="/en") English
+    if lng != 'ru'
+      div.link
+        a.link(href="/ru") Russian

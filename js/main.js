@@ -1,8 +1,3 @@
-//import $ from  'jquery';
-
-//import './test';
-// ss
-
 $(document).ready(() => {
   $('#outer-body').css('display', 'block');
   $('#loading').css('display', 'none');
@@ -10,7 +5,6 @@ $(document).ready(() => {
     .fullpage({
       verticalCentered: false,
       anchors: ['heroPage', 'aboutMePage', 'resumePage', 'servicesPage', 'contactPage'],
-      //sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C'],
       navigation: true,
       navigationPosition: 'right',
       navigationTooltips: ['Home', 'About me', 'Resume', 'Services', 'Contact'],

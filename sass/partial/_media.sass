@@ -22,5 +22,17 @@
   @media all and (min-width: 1201px)
     @content
 
+=iphone--5-5s-5c-5s3--portrait-landscape
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2)
+    @content
+
+=iphone--5-5s-5c-5s3--portrait
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)
+    @content
+
+=iphone--5-5s-5c-5s3--landscape
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)
+    @content
+
 @function grid($value)
   @return percentage($value / 960)
