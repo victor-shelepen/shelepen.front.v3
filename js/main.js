@@ -20,7 +20,6 @@ $(document).ready(() => {
 
   $('#header .menu .close-button')
     .on('click', (event) => {
-      console.log('CLOSED');
       $('#header .menu')
         .removeClass('show');
       event.preventDefault();
