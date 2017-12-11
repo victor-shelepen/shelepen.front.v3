@@ -7,7 +7,7 @@ en:
     description: >
       I worked on a Drupal project as a part of the team.
       It was a specific project that was integrated with another service.
-      I did a lot of custom functionality , those were based on Drupal framework:
+      I did a lot of custom functionality, those were based on Drupal framework:
       Menu API, FAPI, a lot of ajax forms, a payment system, of course another stuff
       that was common for a drupal developer.
   ffw:
@@ -22,14 +22,14 @@ en:
       I worked as a back-end developer. Here we used a lot of different techniques of project development.
       At first it was hard then it became easier. I felt as an item of a big system.
       Everything became predictable with strict risks.
-      I’ve got good and wide experience of working in the team and knowledge of management(team, project, code, ...) here.
+      I’ve got good and wide experience of working in the team and knowledge of management (team, project, code, ...) here.
   speroteck:
     position: Magento developer
     company: Speroteck
-    place: Kyiv
-    period: June 2016 - October 2016, 8 months
+    place: Chernigov
+    period: September 2015 - April 2016, 8 months
     description: >
-      I had to work as a Magento back- end Developer but I did everything related with development.
+      I had to work as a Magento back-end Developer but I did everything related with development.
       I worked with Magento: Export/Import product processes, Integration with third-party services,
       resolved Magento performance issues, studied Magento2. Also I studied BigCommerce, SalesForce there.
       A lot of time I worked with an internal project that was built on technologies: Silex, Symfony, Bootstrap.
@@ -41,7 +41,7 @@ en:
     description: >
       I developed the HTML5 based, hybrid application for Smart TV for different platforms.
       I refactored the existed code base and developed new functionality in the existing application.
-      During the period I was using low level Web technologies such as HTML, CSS, Javascript.
+      During the period I was using low level Web technologies such as HTML, CSS, JavaScript.
   ciklum:
     position: Middle Drupal developer
     company: Ciklum
@@ -50,7 +50,7 @@ en:
     description: >
       I worked in a team of Drupal front-end and back-end developers.
       I was a member of a team and resolved tasks, planned by our manager from Denmark side.
-      I used their approaches and tools to build projects. We used a lot of panels based solutions.
+      I used their approaches and tools to build projects. We used a lot of Panels based solutions.
   w3:
     position: CMS Developer
     company: W3
@@ -62,7 +62,7 @@ en:
       I did not work with clients directly. We used AGILE - the management style of the project.
       So I worked with the project manager tightly.
   skelia:
-    position: Senior drupal PHP Developer
+    position: Senior Drupal PHP Developer
     company: Skelia
     place: Kyiv
     period: August 2012 - July 2013, 1 year
@@ -92,7 +92,7 @@ ru:
     place: Киев
     period: Январь 2017 - Февраль 2017, 2 месяца
     description: >
-      Работал над Drupal проектом в команде. Проект был особенный, который интенрировали с другим сервисом.
+      Работал над Drupal проектом в команде. Проект был особенный, который интегрировали с другим сервисом.
       Реализовывал бизнес функционал, который основывался на возможностях Drupal:
       Menu API, FAPI, много ajax форм, платежная система и много других обычных задач как для Drupal разработчика.
   ffw:
@@ -101,29 +101,29 @@ ru:
     place: Удаленно
     period: Июнь 2016 - Октябрь 2016, 5 месяцев
     description: >
-      Работал в команде распределенной по миру из дома как разработчик поддержки. Сразу работал над несколькими проектами.
+      Работал из дома в составе команды, распределенной по миру, в качестве разработчика поддержки. Одновременно работал над несколькими проектами.
       Проекты были большими порталами на базе Drupal 7 и Drupal 8. Процессы управления командой и проектами были реализованы
       хорошо. Также работал над редизайном проекта на Drupal в роли back-end разработчика, где использовали различные
-      техники разработки. Здесь я получил хороший опыт работы в команде, знания управления командой и проектом.
+      техники разработки. Вначале было сложно, а со временем намного упростилась работа, так как я себя чувствовал составляющей большой системы. Все стало предсказуемым с четко определенными рискамт. Здесь я получил хороший опыт работы в команде, знания по управлению командой и проектом.
   speroteck:
     position: Magento разработчик
     company: Speroteck
-    place: Киев
-    period: Июнь 2016 - Октябрь 2016, 8 месяцев
+    place: Чернигов
+    period: Сентябрь 2015 - Апрель 2016, 8 месяцев
     description: >
       Должен был работать как Magento back-end разработчик, но выполнял разные задачи как разработчик.
       Как Magento разработчик: реализовывал процессы Экспорта/Импорта продуктов, интеграция с другими сервисами,
       решал проблемы с производительностью, изучал Magento2. Также изучал BigCommerce, SalesForce.
-      Много времени работал на внутреннем проекте используюший Silex, Symfony, Bootstrap.
+      Много времени работал на внутреннем проекте, использующем Silex, Symfony, Bootstrap.
   divantv:
     position: Javascript, PHP developer
     company: Divan.TV
     place: Chernigov
     period: May 2015 - July 2015, 3 months
     description: >
-      Разрабатывал HTML5 и гибридные приложения для Smart TV под разные телевизионные платформы. Перераьатывал
-      существующий код, разрабатывал новый функционал. Приложение разрабатывалось используя более базовые технологии
-      такие как HTML, CSS, Javascript.
+      Разрабатывал HTML5 и гибридные приложения для Smart TV под разные телевизионные платформы. Перерабатывал
+      существующий код, разрабатывал новый функционал. Приложение разрабатывалось, используя более базовые технологии,
+      такие как HTML, CSS, JavaScript.
   ciklum:
     position: Middle Drupal разработчик
     company: Ciklum
@@ -131,26 +131,26 @@ ru:
     period: Октябрь 2014 - Декабрь 2014, 3 месяца
     description: >
       Работал в команде Drupal front-end и back-end разработчиков. Выполняли технические задачи, которые были
-      спланированы менеджерами с Датской стороны. Использовали их подходы и инструменты для построения проектов.
-      Много использовали технологий базирующихся на Panels.
+      спланированы менеджерами с датской стороны. Использовали их подходы и инструменты для построения проектов.
+      Много использовали технологий, базирующихся на Panels.
   w3:
     position: CMS Разработчик
     company: W3
     place: Харьков
     period: Июнь 2014 - Июль 2015, 2 месяца
     description: >
-      Работал на обратной связи на длительных Drupal проектах. Было несколько проектов в которых изучал проблемы,
-      предлагал их решение, реализовывал их. С клиентами работал через менеджера проектов.
+      Работал на обратной связи на длительных Drupal проектах. Было несколько проектов, проблемы которых я изучал,
+      предлагал их решение, реализовывал их. Работали по принципам AGILE, таким образом с клиентами работал через менеджера проектов.
   skelia:
-    position: Drupal PHP Разработчик
+    position: Ведущий Drupal PHP разработчик
     company: Skelia
     place: Киев
     period: Август 2012 - Июль 2013, 1 год
     description: >
-      Был ответсвенен за поддержку текущего состояния проекта, разработки нового функционала. Проект был построен на
-      Drupal 6 c использованием расширений от сообщества. Также много было разработано много своих модулей, которые
+      Был ответсвенен за поддержку текущего состояния проекта, разработку нового функционала. Проект был построен на
+      Drupal 6 c использованием расширений от сообщества. Также много было разработано своих модулей, которые
       реализовывали бизнес логику. Здесь  я получил хорошую практику работы с иностранными клиентами, повысил уровень
-      владения английского языка, ездил в деловые поездки за границу.
+      владения английским языком, ездил в деловые поездки за границу.
   adyax:
     position: Drupal разработчик
     company: Adyax
@@ -159,5 +159,5 @@ ru:
     description: >
       Процесс разработки был похож на фабрику, каждый знал и выполнял свои обязаности. Использовали Drupal 6 и лучшие практики
       компании, которые были на то время. Был в команде, которая поддердживала и разрабатывала проекты для
-      компании "Johnson&Johnson". Хороший пример разработки корпаративных продуктов основаных на одной платформе:
-      Drupal multisiting, Aegir. Здесь я поклучил огромный опыт работы в команды с распределенными обязанностями.
+      компании "Johnson&Johnson". Хороший пример разработки корпаративных продуктов, основаных на одной платформе:
+      Drupal multisiting, Aegir. Здесь я получил огромный опыт работы в команде с распределенными обязанностями.
