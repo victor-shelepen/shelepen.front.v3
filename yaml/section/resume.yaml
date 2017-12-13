@@ -116,10 +116,10 @@ ru:
       решал проблемы с производительностью, изучал Magento2. Также изучал BigCommerce, SalesForce.
       Много времени работал на внутреннем проекте, использующем Silex, Symfony, Bootstrap.
   divantv:
-    position: Javascript, PHP developer
+    position: Javascript, PHP разработчик
     company: Divan.TV
-    place: Chernigov
-    period: May 2015 - July 2015, 3 months
+    place: Чернигов
+    period: Май 2015 - Июль 2015, 3 месяца
     description: >
       Разрабатывал HTML5 и гибридные приложения для Smart TV под разные телевизионные платформы. Перерабатывал
       существующий код, разрабатывал новый функционал. Приложение разрабатывалось, используя более базовые технологии,
@@ -127,7 +127,7 @@ ru:
   ciklum:
     position: Middle Drupal разработчик
     company: Ciklum
-    place: Kyiv
+    place: Киев
     period: Октябрь 2014 - Декабрь 2014, 3 месяца
     description: >
       Работал в команде Drupal front-end и back-end разработчиков. Выполняли технические задачи, которые были
@@ -192,14 +192,14 @@ uk:
       вирішував проблеми з продуктивністю, вивчав Magento2. Також вивчав BigCommerce, SalesForce.
       Багато часу працював на внутрішньому проекті, що використовував Silex, Symfony, Bootstrap.
   divantv:
-    position: Javascript, PHP developer
+    position: Javascript, PHP розробник
     company: Divan.TV
-    place: Chernigov
-    period: May 2015 - July 2015, 3 months
+    place: Чернігів
+    period: Травень 2015 - Липень 2015, 3 місяця
     description: >
-      Разрабатывал HTML5 и гибридные приложения для Smart TV под разные телевизионные платформы. Перерабатывал
-      существующий код, разрабатывал новый функционал. Приложение разрабатывалось, используя более базовые технологии,
-      такие как HTML, CSS, JavaScript.
+      Розроблював HTML5 і гібридні додатки для Smart TV під різні телевізійні платформи. Перероблював
+      існуючий код, розроблював новий функціонал. Додаток розроблювався, використовуючи більш базові технології,
+      такі як HTML, CSS, JavaScript.
   ciklum:
     position: Middle Drupal разработчик
     company: Ciklum
