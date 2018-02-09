@@ -1,16 +1,26 @@
+window._moveTo = (anchor) => {
+  $('html, body').stop().animate({
+    scrollTop: $(anchor).offset().top - 64
+  }, 400);
+};
+
 $(document).ready(() => {
   $('#outer-body').css('display', 'block');
   $('#loading').css('display', 'none');
-  $('#fullpage')
-    .fullpage({
-      verticalCentered: false,
-      anchors: ['heroPage', 'aboutMePage', 'resumePage', 'servicesPage', 'contactPage'],
-      navigation: true,
-      navigationPosition: 'right',
-      navigationTooltips: ['Home', 'About me', 'Resume', 'Services', 'Contact'],
-      slidesNavPosition: 'top',
-      controlArrows: true
-    });
+  // $('#fullpage')
+  //   .fullpage({
+  //     verticalCentered: false,
+  //     anchors: ['heroPage', 'aboutMePage', 'resumePage', 'servicesPage', 'contactPage'],
+  //     navigation: true,
+  //     navigationPosition: 'right',
+  //     navigationTooltips: ['Home', 'About me', 'Resume', 'Services', 'Contact'],
+  //     slidesNavPosition: 'top',
+  //     controlArrows: true,
+  //     scrollOverflow: true
+  //   });
+
+  $('.carousel.carousel-slider').carousel({fullWidth: true});
+  $('.collapsible').collapsible();
 
   $('#header .mobile-menu-button')
     .on('click', () => {
@@ -30,7 +40,7 @@ $(document).ready(() => {
       let href = $(event.target).attr('data-href');
       $('#header .menu')
         .removeClass('show');
-      $.fn.fullpage.moveTo(href);
+      //$.fn.fullpage.moveTo(href);
     });
 });
 

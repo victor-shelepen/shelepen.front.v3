@@ -1,16 +1,16 @@
-div#header
-  div.material-icons.logo timelapse
-  div.material-icons.mobile-menu-button menu
-  div.menu
-    div.material-icons.close-button arrow_back
-    div.link(data-href="heroPage")= component.header[lng].menu.home
-    div.link(data-href="aboutMePage")= component.header[lng].menu.aboutMe
-    div.link(data-href="resumePage")= component.header[lng].menu.resume
-    div.link(data-href="servicesPage")= component.header[lng].menu.services
-    div.link(data-href="contactPage")= component.header[lng].menu.contact
-    if lng != 'en'
-      div.link
-        a.link(href="/en/index.html") English
-    if lng != 'ru'
-      div.link
-        a.link(href="/ru/index.html") Russian
+div#header-section.navbar-fixed
+  nav
+    div.nav-wrapper
+      a.brand-logo(href="3")
+        i.large.material-icons.logo timelapse
+      ul#nav-mobile.right
+        li
+          a(onclick="_moveTo('.section.hero')")= component.header[lng].menu.home
+        li
+          a(onclick="_moveTo('.section.about-me')")= component.header[lng].menu.aboutMe
+        li
+          a(onclick="_moveTo('.section.resume')")= component.header[lng].menu.resume
+        li
+          a(onclick="_moveTo('.section.services')")= component.header[lng].menu.services
+        li
+          a(onclick="_moveTo('.section.contact')")= component.header[lng].menu.contact

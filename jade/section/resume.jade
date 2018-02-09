@@ -1,7 +1,8 @@
-div.container
-  for position in section.resume[lng]
-    div.slide
-      div.inner
-        div.company-name-position= position.position + ' at ' + position.company
+h1.center-align= section.resume[lng].title
+ul(data-collapsible="accordion").collapsible.popout
+  for position in section.resume[lng].position
+    li
+      div.collapsible-header= position.position + ' at ' + position.company
+      div.collapsible-body
         div.place-period= position.place + ' - ' + position.period
-        div.description= position.description
+        span= position.description
