@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons')
 
-@import 'partial/reset'
+
+//@import 'partial/reset'
+@import 'partial/materialize'
+
 @import 'partial/media'
 @import 'partial/core'
 @import 'partial/component/header'
@@ -9,42 +12,3 @@
 @import 'partial/section/resume'
 @import 'partial/section/services'
 @import 'partial/section/contact'
-
-html
-  font-family: Play
-  font-size: 100%
-
-  +tabletAnd
-    font-size: 200%
-
-body
-  background: white
-  color: lightcyan
-
-#loading
-  position: absolute
-  z-index: 11
-  background: rgba(55, 55, 55, .55)
-  display: flex
-  flex-direction: row
-  justify-content: center
-  align-items: center
-  height: 100%
-  width: 100%
-
-#outer-body
-  display: none
-
-.fp-controlArrow
-  &.fp-prev
-    border-width: 36px 12px 36px 0
-
-  &.fp-next
-    border-width: 36px 0px 36px 12px
-
-a
-  color: white
-  text-decoration: none
-
-  &:hover
-    color: blue
