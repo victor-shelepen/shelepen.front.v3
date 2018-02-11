@@ -1,9 +1,12 @@
 div.container
   div.row
     div.col.s12
-      div.card.blue-grey.darken-1.hoverable
-        div.card-content.white-text
-          span.card-title= section.aboutMe[lng].title
-          p= section.aboutMe[lng].subtitle
-          p= section.aboutMe[lng].personal
-          div.professional= section.aboutMe[lng].professional
+      div.card.horizontal.hoverable
+        div.card-image
+          img(src="/images/hero-bg.jpg")
+        div.card-stacked
+          div.card-content
+            span.card-title= section.aboutMe[lng].title
+            p= section.aboutMe[lng].subtitle
+            p= section.aboutMe[lng].personal
+            div.professional= section.aboutMe[lng].professional

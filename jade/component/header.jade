@@ -1,9 +1,11 @@
 div#header-section.navbar-fixed
   nav
     div.nav-wrapper
-      a.brand-logo(href="3")
+      a(href="#").button-collapse
+        i.material-icons menu
+      a.brand-logo(href="#")
         i.large.material-icons.logo timelapse
-      ul#nav-mobile.right
+      ul#nav-mobile.right.hide-on-med-and-down
         li
           a(onclick="_moveTo('.section.hero')")= component.header[lng].menu.home
         li
@@ -14,3 +16,15 @@ div#header-section.navbar-fixed
           a(onclick="_moveTo('.section.services')")= component.header[lng].menu.services
         li
           a(onclick="_moveTo('.section.contact')")= component.header[lng].menu.contact
+
+ul#slide-out.side-nav
+  li
+    div.user-view
+      div.background
+        img(src="/images/hero-bg.jpg")
+      a(href="#!user")
+        img.circle(src="/images/hero-bg.jpg")
+        a(href="#!name")
+          span.white-text.name John Doe
+        a(href="#!email")
+          span.white-text.email jdandturk@gmail.com

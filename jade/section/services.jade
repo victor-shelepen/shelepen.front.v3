@@ -1,11 +1,11 @@
 h1.center-align= section.services[lng].title
 div.container
   div.row
-    for service in section.services[lng].services
+    each service, key in section.services[lng].services
       div.col.m6
         div.card.hoverable
           div.card-image.waves-effect.waves-block.waves-light
-            img.activator(src="/images/hero-bg.jpg")
+            img.activator(src="/images/services/#{key}.png")
           div.card-content
           span.card-title.activator.grey-text.text-darken-4= service.title
           div.card-reveal
