@@ -1,8 +1,12 @@
-h1.center-align= section.resume[lng].title
-ul(data-collapsible="accordion").collapsible.popout
-  for position in section.resume[lng].position
-    li
-      div.collapsible-header= position.position + ' at ' + position.company
-      div.collapsible-body
-        div.place-period= position.place + ' - ' + position.period
-        span= position.description
+div.container
+  div.row
+    div.col.m12
+      h1.center-align= section.resume[lng].title
+  div.col.m12
+    ul(data-collapsible="accordion").collapsible.popout
+      for position in section.resume[lng].position
+        li
+          div.collapsible-header= position.position + ' at ' + position.company
+          div.collapsible-body
+            div.place-period= position.place + ' - ' + position.period
+            span= position.description

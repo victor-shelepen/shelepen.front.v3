@@ -6,6 +6,10 @@ en:
     resume: Resume
     services: Services
     contact: Contact
+  lang:
+    en: Eng
+    ru: Rus
+    uk: Ukr
 ru:
   menu:
     home: Домашняя
@@ -14,11 +18,19 @@ ru:
     resume: Резюме
     services: Услуги
     contact: Контакты
+  lang:
+    en: Анг
+    ru: Рус
+    uk: Укр
 uk:
   menu:
-      home: Домашня
-      contact: Контакти
-      aboutMe: Про мене
-      resume: Резюме
-      services: Послуги
-      contact: Контакти
+    home: Домашня
+    contact: Контакти
+    aboutMe: Про мене
+    resume: Резюме
+    services: Послуги
+    contact: Контакти
+  lang:
+    en: Анг
+    ru: Рос
+    uk: Укр

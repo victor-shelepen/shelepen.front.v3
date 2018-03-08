@@ -1,15 +1,15 @@
-h1.center-align= section.services[lng].title
 div.container
+  div.col.m12
+    h1.center-align= section.services[lng].title
   div.row
     each service, key in section.services[lng].services
-      div.col.m6
+      div.col.s12.m6.l4
         div.card.hoverable
           div.card-image.waves-effect.waves-block.waves-light
             img.activator(src="/images/services/#{key}.png")
-          div.card-content
           span.card-title.activator.grey-text.text-darken-4= service.title
           div.card-reveal
             span.card-title.grey-text.text-darken-4
-              = service.title
+              div.center-align= service.title
               i.material-icons.right close
             p= service.content

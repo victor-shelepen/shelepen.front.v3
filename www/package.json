@@ -9,7 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "fullpage.js": "^2.9.5",
     "materialize-css": "^0.100.2"
   }
 }

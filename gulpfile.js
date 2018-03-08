@@ -22,6 +22,7 @@ gulp.task('jade', function() {
     component: {}
   };
   data.component.header = yaml.load('./yaml/component/header.yaml');
+  data.component.footer = yaml.load('./yaml/component/footer.yaml');
   data.section.hero = yaml.load('./yaml/section/hero.yaml');
   data.section.aboutMe = yaml.load('./yaml/section/about-me.yaml');
   data.section.resume = yaml.load('./yaml/section/resume.yaml');
@@ -38,7 +39,7 @@ gulp.task('jade', function() {
       .pipe(gulp.dest('./www/' + lng))
       .pipe(reload({stream: true}));
   }
-  compile(data, 'en')
+  compile(data, 'en');
   compile(data, 'ru');
 });
 

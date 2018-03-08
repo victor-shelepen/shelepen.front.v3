@@ -1,7 +1,7 @@
 div#header-section.navbar-fixed
   nav
     div.nav-wrapper
-      a(href="#").button-collapse
+      a(href="#" data-activates="slide-out").button-collapse
         i.material-icons menu
       a.brand-logo(href="#")
         i.large.material-icons.logo timelapse
@@ -16,6 +16,12 @@ div#header-section.navbar-fixed
           a(onclick="_moveTo('.section.services')")= component.header[lng].menu.services
         li
           a(onclick="_moveTo('.section.contact')")= component.header[lng].menu.contact
+        li
+          a(href="/en")= component.header[lng].lang.en
+        li
+          a(href="/ru")= component.header[lng].lang.ru
+        li
+          a(href="/uk")= component.header[lng].lang.uk
 
 ul#slide-out.side-nav
   li
@@ -28,3 +34,22 @@ ul#slide-out.side-nav
           span.white-text.name John Doe
         a(href="#!email")
           span.white-text.email jdandturk@gmail.com
+  li
+    ul
+      li
+        a(onclick="_moveTo('.section.hero')")= component.header[lng].menu.home
+      li
+        a(onclick="_moveTo('.section.about-me')")= component.header[lng].menu.aboutMe
+      li
+        a(onclick="_moveTo('.section.resume')")= component.header[lng].menu.resume
+      li
+        a(onclick="_moveTo('.section.services')")= component.header[lng].menu.services
+      li
+        a(onclick="_moveTo('.section.contact')")= component.header[lng].menu.contact
+      li
+        a(href="/en")= component.header[lng].lang.en
+      li
+        a(href="/ru")= component.header[lng].lang.ru
+      li
+        a(href="/uk")= component.header[lng].lang.uk
+

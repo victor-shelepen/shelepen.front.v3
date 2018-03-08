@@ -1,12 +1,8 @@
 footer.page-footer
   div.container
     div.row
-      div.col.l6.s12
-        h5.white-textFooter Content
-        p.grey-text.text-lighten-4 You can use rows and columns here to organize your footer content.
       div.col.l4.offset-l2.s12
-        h5 Menu t
-        ul
+        ul.menu
           li
             a.grey-text.text-lighten-3(onclick="_moveTo('.section.hero')")= component.header[lng].menu.home
           li
@@ -18,6 +14,4 @@ footer.page-footer
           li
             a.grey-text.text-lighten-3(onclick="_moveTo('.section.contact')")= component.header[lng].menu.contact
   div.footer-copyright
-    div.container
-      | © 2014 Copyright Text
-      a.grey-text.text-lighten-4.right More Links
+    div.container= component.footer[lng].copyright
