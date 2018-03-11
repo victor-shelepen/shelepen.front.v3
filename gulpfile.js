@@ -1,6 +1,7 @@
 var
   gulp = require('gulp'),
   jade = require('gulp-jade'),
+  concat = require('gulp-concat'),
   browserSync = require('browser-sync'),
   reload = browserSync.reload,
   sass = require('gulp-sass'),
@@ -48,6 +49,17 @@ gulp.task('js', function() {
     .pipe(webpack( require('./webpack.config.js') ))
     .pipe(gulp.dest('www/'))
     .pipe(reload({stream: true}));
+});
+
+
+gulp.task('compile_vendor', function () {
+  gulp.src([
+    './www/node_modules/hammerjs/hammer.js',
+    './www/node_modules/jquery/dist/jquery.min.js',
+    './www/node_modules/materialize-css/dist/js/materialize.min.js'
+   ])
+    .pipe(concat('vendor.js'))
+    .pipe(gulp.dest('./www/js/'));
 });
 
 gulp.task('serve', function () {
