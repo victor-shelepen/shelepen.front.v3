@@ -7,6 +7,7 @@ var
   sass = require('gulp-sass'),
   yaml = require('yamljs'),
   lodash = require('lodash'),
+  fs = require('fs-extra'),
   webpack = require('webpack-stream');
 
 gulp.task('sass', function () {
@@ -14,6 +15,28 @@ gulp.task('sass', function () {
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('./www/css'))
     .pipe(reload({stream: true}));
+});
+
+gulp.task('build', function() {
+  var buildDirName = 'build';
+  var sourceDirName = 'www';
+  if (fs.ensureDirSync(buildDirName)) {
+    fs.removeSync(buildDirName);
+    fs.mkdirSync(buildDirName);
+  }
+  [
+    'css',
+    'js',
+    'en',
+    'ru',
+    'images',
+    'index.html'
+  ].forEach((item) => {
+    fs.copySync(
+      sourceDirName + '/' + item,
+      buildDirName + '/' + item
+    );
+  });
 });
 
 gulp.task('jade', function() {
@@ -60,6 +83,14 @@ gulp.task('compile_vendor', function () {
    ])
     .pipe(concat('vendor.js'))
     .pipe(gulp.dest('./www/js/'));
+});
+
+gulp.task('build-server', function () {
+  browserSync({
+    server: {
+      baseDir: 'build/'
+    }
+  });
 });
 
 gulp.task('serve', function () {

@@ -1,5 +1,8 @@
 .idea
 node_modules
+build/*
 www/*
 !www/images
 !www/package.json
+!www/index.html
+!www/CNAME
