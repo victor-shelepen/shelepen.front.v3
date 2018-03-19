@@ -30,7 +30,8 @@ gulp.task('build', function() {
     'en',
     'ru',
     'images',
-    'index.html'
+    'index.html',
+    'CNAME'
   ].forEach((item) => {
     fs.copySync(
       sourceDirName + '/' + item,
@@ -65,6 +66,7 @@ gulp.task('jade', function() {
   }
   compile(data, 'en');
   compile(data, 'ru');
+  compile(data, 'uk');
 });
 
 gulp.task('js', function() {
