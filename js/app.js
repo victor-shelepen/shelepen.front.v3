@@ -7,7 +7,7 @@ window._moveTo = (anchor) => {
 };
 
 $(document).ready(() => {
-  $('#loading').css('display', 'none');
+  $('.app-loading').css('display', 'none');
   $(".button-collapse").sideNav();
   $('.carousel.carousel-slider').carousel({fullWidth: true});
   $('.collapsible').collapsible();

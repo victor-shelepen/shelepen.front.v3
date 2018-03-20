@@ -8,21 +8,77 @@ html(lang="en")
     )
     title= pageTitle
 
+    head
+      style(type='text/css').
+        body, html {
+          height: 100%;
+        }
+
+        .app-loading {
+          background: #162337;
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          height: 100%;
+        }
+
+        .app-loading .spinner {
+          height: 200px;
+          width: 200px;
+          width: 200px;
+          animation: rotate 2s linear infinite;
+          transform-origin: center center;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin: auto;
+        }
+
+        .app-loading .spinner .path {
+          stroke-dasharray: 1, 200;
+          stroke-dashoffset: 0;
+          animation: dash 1.5s ease-in-out infinite;
+          stroke-linecap: round;
+          stroke: #ddd;
+        }
+
+        @keyframes rotate {
+          100% {
+            transform: rotate(360deg);
+          }
+        }
+
+        @keyframes dash {
+          0% {
+            stroke-dasharray: 1, 200;
+            stroke-dashoffset: 0;
+          }
+          50% {
+            stroke-dasharray: 89, 200;
+            stroke-dashoffset: -35px;
+          }
+          100% {
+            stroke-dasharray: 89, 200;
+            stroke-dashoffset: -124px;
+          }
+        }
+
+        .app-loading .logo {
+          width: 100px;
+          height: 100px;
+          background: url("/images/logo-loading.png") center center no-repeat;
+          background-size: contain;
+        }
+
   body
-    div#loading
-      svg(version="1.1," id="Layer_1", xmlns="http://www.w3.org/2000/svg", xmlns:xlink="http://www.w3.org/1999/xlink", x="0px", y="0px", width="24px", height="30px", viewBox="0 0 24 30", style="enable-background:new 0 0 50 50;", xml:space="preserve")
-        rect(x="0", y="10", width="4", height="10", fill="#333", opacity="0.2")
-          animate(attributeName="opacity", attributeType="XML", values="0.2; 1; .2", begin="0s", dur="0.6s", repeatCount="indefinite")
-          animate(attributeName="height", attributeType="XML", values="10; 20; 10", begin="0s", dur="0.6s", repeatCount="indefinite")
-          animate(attributeName="y", attributeType="XML", values="10; 5; 10", begin="0s", dur="0.6s", repeatCount="indefinite")
-        rect(x="8", y="10", width="4", height="10", fill="#333",  opacity="0.2")
-          animate(attributeName="opacity", attributeType="XML", values="0.2; 1; .2", begin="0.15s", dur="0.6s", repeatCount="indefinite")
-          animate(attributeName="height", attributeType="XML", values="10; 20; 10", begin="0.15s", dur="0.6s", repeatCount="indefinite")
-          animate(attributeName="y", attributeType="XML", values="10; 5; 10", begin="0.15s", dur="0.6s", repeatCount="indefinite")
-        rect(x="16", y="10", width="4", height="10", fill="#333",  opacity="0.2")
-          animate(attributeName="opacity", attributeType="XML", values="0.2; 1; .2", begin="0.3s", dur="0.6s", repeatCount="indefinite")
-          animate(attributeName="height", attributeType="XML", values="10; 20; 10", begin="0.3s", dur="0.6s", repeatCount="indefinite")
-          animate(attributeName="y", attributeType="XML", values="10; 5; 10", begin="0.3s", dur="0.6s", repeatCount="indefinite")
+    div.app-loading
+      div.logo
+      svg.spinner(viewBox="25 25 50 50")
+        circle.path(cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10")
 
      div#outer-body
       block body
