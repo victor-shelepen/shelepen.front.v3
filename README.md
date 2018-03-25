@@ -9,7 +9,8 @@ It have to reduce price for clients remaining the same price for functional item
 This project can be used as a template for a similar project.
 It fits very well for same projects.
 These have same functionality with a different look and different content. Feel free forking.
-We could economy 
+## Articles these are based on the project.
+* [Development approaches of Shelepen's Personal Site](http://vlikin.blogspot.com/2018/03/development-approaches-of-shelepens.html)
 ## Project features.
 ### Functional
 * Landing page.
