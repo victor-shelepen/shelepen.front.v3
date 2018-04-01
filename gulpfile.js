@@ -51,6 +51,7 @@ gulp.task('jade', function() {
   data.component.footer = yaml.load('./yaml/component/footer.yaml');
   data.section.hero = yaml.load('./yaml/section/hero.yaml');
   data.section.aboutMe = yaml.load('./yaml/section/about-me.yaml');
+  data.section.blog = yaml.load('./yaml/section/blog.yaml');
   data.section.resume = yaml.load('./yaml/section/resume.yaml');
   data.section.services = yaml.load('./yaml/section/services.yaml');
   data.section.contact = yaml.load('./yaml/section/contact.yaml');

@@ -1,5 +1,8 @@
 en:
   title: Resume
+  call_to_action:
+    title: Look at LinkedIn
+    href: https://www.linkedin.com/in/viktor-shelepen-0a7962103/
   position:
     hypernaut:
       position: Drupal developer
@@ -89,6 +92,9 @@ en:
         I received the huge experience how to work in a team with separate responsibilities, control results.
 ru:
   title: Резюме
+  call_to_action:
+    title: Посмотреть на LinkedIn
+    href: https://www.linkedin.com/in/viktor-shelepen-0a7962103/
   position:
     hypernaut:
       position: Drupal разработчик
@@ -167,6 +173,9 @@ ru:
         Drupal multisiting, Aegir. Здесь я получил огромный опыт работы в команде с распределенными обязанностями.
 uk:
   title: Резюме
+  call_to_action:
+    title: Подивитися на LinkedIn
+    href: https://www.linkedin.com/in/viktor-shelepen-0a7962103/
   position:
     hypernaut:
       position: Drupal розробник
