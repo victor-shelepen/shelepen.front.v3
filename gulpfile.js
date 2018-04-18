@@ -29,6 +29,7 @@ gulp.task('build', function() {
     'js',
     'en',
     'ru',
+    'uk',
     'images',
     'index.html',
     'CNAME'
