@@ -4,6 +4,22 @@ en:
     title: Look at LinkedIn
     href: https://www.linkedin.com/in/viktor-shelepen-0a7962103/
   position:
+    nda_1:
+      position: NodeJS developer - single player
+      company: NDA
+      place: Kyiv
+      period: August 2017 - Now, 9 months
+      description: >
+        I am developing a webtool using NodeJS, JavaScript technologies.
+        I do almost everything by myself: work with the business side, plan the technology stack,
+        create the architecture, develop both front-end back-end subprojects, deploy the projects, monitor the projects,
+        optimize and modernate them. The main base coupled technologies are NodeJS, JavaScript,
+        TypeScript that influences both to back-end: inversify.js, lodash, mongodb, expressjs, mocha; front-end:
+        Angular4, Material Design, D3. The server side is developed using TDD approach.
+        The whole layers application are tested by protractor e2e tests.
+        It helps me to check workability on stages and create video reports of the application functionality.
+        Time to time I check performance and resolve related issues. Sometimes they are challenging.
+        I like the project :)
     hypernaut:
       position: Drupal developer
       company: Hypernaut
@@ -96,6 +112,25 @@ ru:
     title: Посмотреть на LinkedIn
     href: https://www.linkedin.com/in/viktor-shelepen-0a7962103/
   position:
+    nda_1:
+      position: NodeJS разработчик - single player
+      company: NDA
+      place: Киев
+      period: Август 2017 - Сейчас, 9 месяцев
+      description: >
+        Разрабатываю Web инструмент используя NodeJS, JavaScript технологии.
+        Почти всё делаю самостоятельно: общаюсь со стороной бизнеса, определяю стек технологий,
+        создаю архитектуру, разрабатываю как back-end, так и front-end подпроекты, разворачиваю проекты, мониторю,
+        оптимизирую, модернизирую их.
+        Основные технологии проекта завязаные на NodeJS, JavaScript, TypeScript, которые влияют как на
+        back-end: inversify.js, lodash, mongodb, expressjs, mocha;
+        так и на front-end: Angular4, Material Design, D3.
+        Серверная часть разрабатывалася по TDD подходу.
+        Все слои приложения покрыты e2e тестами.
+        Что помогает мне проверять работоспособность на всех рабочих местах,
+        генерировать видео отчет функциональности приложенияю
+        Время от времени проверяю производительность, решаю связаные задачи. Иногда они непростые.
+        Мне нравится этот проект!
     hypernaut:
       position: Drupal разработчик
       company: Hypernaut
@@ -177,6 +212,24 @@ uk:
     title: Подивитися на LinkedIn
     href: https://www.linkedin.com/in/viktor-shelepen-0a7962103/
   position:
+    nda_1:
+      position: NodeJS розробник - single player
+      company: NDA
+      place: Київ
+      period: Серпень 2017 - Зараз, 9 месяцев
+      description: >
+        Розробляю Web інструмент використовуючи NodeJS, JavaScript технології.
+        Майже все виконую самостійно: спілкуюсь із стороною бізнесу, визначаю стек технологій,
+        створюю архітектуру, розробляю як back-end, так і front-end підпроекти, розгортаю проекти, моніторю,
+        оптимізую, модернізую їх.
+        Основні технології проекта зав'язані на NodeJS, JavaScript, TypeScript, які впливають як на
+        back-end: inversify.js, lodash, mongodb, expressjs, mocha;
+        так і на front-end: Angular4, Material Design, D3.
+        Серверна частина розроблялася згідно TDD підходу.
+        Всі слої додатку покриті e2e тестами.
+        Що допомагає перевіряти працеспроможність усюди, генерувати відео доповіді про функціональність додатку.
+        Час від часу перевіряю продуктивність всюди, вирішую задачі пов'язані із ними. Іноді вони непрості.
+        Мені подобається цей проект!
     hypernaut:
       position: Drupal розробник
       company: Hypernaut
