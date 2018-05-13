@@ -34,6 +34,10 @@ Assemple the build
 ```
 gulp build
 ```
+Check results these were built.
+```
+gulp build-server
+```
 * Uncomment `build` folder in the file `.gitignore`
 * Add the build and commit it
 ```
@@ -50,7 +54,7 @@ www.shelepen.com.ua
 ```
 Delete the temporary branch
 ```
-git branch -D gh-page-preparation
+git branch -D gh-pages-preparation
 ```
 
 ## Links
