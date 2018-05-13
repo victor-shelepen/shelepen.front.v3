@@ -1,11 +1,12 @@
 var path = require('path');
 var webpack = require('webpack');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = {
-  entry: './js/main.js',
+  entry: './js/app.js',
   output: {
     path: path.resolve(__dirname, 'www'),
-    filename: 'main.bundle.js'
+    filename: 'js/app.bundle.js'
   },
   module: {
     loaders: [
@@ -18,6 +19,9 @@ module.exports = {
       }
     ]
   },
+  plugins: [
+    // new BundleAnalyzerPlugin()
+  ],
   stats: {
     colors: true
   },

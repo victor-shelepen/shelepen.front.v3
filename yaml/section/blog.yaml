@@ -1,0 +1,54 @@
+en:
+ title: Blog
+ call_to_action:
+  title: ALL ARTICLES
+  href: http://vlikin.blogspot.com/
+ articles:
+  - title: Development approaches of Shelepen's Personal Site.
+    href: http://vlikin.blogspot.com/2018/03/development-approaches-of-shelepens.html
+  - title: Shelepen.com.ua Personal Site again.
+    href: http://vlikin.blogspot.com/2018/03/shelepencomua-personal-site-again.html
+  - title: D8 Test Task. Display filtered list of items.
+    href: http://vlikin.blogspot.com/2017/12/d8-test-task-display-filtered-list-of.html
+  - title: Ng4 Test Lading Page.
+    href: http://vlikin.blogspot.com/2017/07/ng4-test-lading-page.html
+  - title: Viktor Fitness - Continuos Integration.
+    href: http://vlikin.blogspot.com/2017/07/viktor-fitness-continuos-integration.html
+  - title: Drupal 8 Test Task for DAXX
+    href: http://vlikin.blogspot.com/2017/06/drupal-8-test-task-for-daxx.html
+ru:
+ title: Блог
+ call_to_action:
+   title: ВСЕ СТАТЬИ
+   href: http://vlikin.blogspot.com/
+ articles:
+  - title: Особенности разработки персонального сайта Shelepen.com.ua
+    href: http://vlikin.blogspot.com/2018/03/development-approaches-of-shelepens.html
+  - title: Снова про персональный сайт Shelepen.com.ua.
+    href: http://vlikin.blogspot.com/2018/03/shelepencomua-personal-site-again.html
+  - title: Тестовое задание на Drupal 8. Отображения фильтруемого списка.
+    href: http://vlikin.blogspot.com/2017/12/d8-test-task-display-filtered-list-of.html
+  - title: Ng4 тестовый проект Lading Page.
+    href: http://vlikin.blogspot.com/2017/07/ng4-test-lading-page.html
+  - title: Viktor Fitness - Continuos Integration.
+    href: http://vlikin.blogspot.com/2017/07/viktor-fitness-continuos-integration.html
+  - title: Drupal 8 тестовое задание для комании DAXX
+    href: http://vlikin.blogspot.com/2017/06/drupal-8-test-task-for-daxx.html
+uk:
+ title: Блог
+ call_to_action:
+   title: ВСІ СТАТТІ
+   href: http://vlikin.blogspot.com/
+ articles:
+   - title: Особливості розробки персонального сайту Shelepen.com.ua
+     href: http://vlikin.blogspot.com/2018/03/development-approaches-of-shelepens.html
+   - title: Знову про персональний сайт Shelepen.com.ua.
+     href: http://vlikin.blogspot.com/2018/03/shelepencomua-personal-site-again.html
+   - title: Тестове завдання на Drupal 8. Відображення фільтруємого списку.
+     href: http://vlikin.blogspot.com/2017/12/d8-test-task-display-filtered-list-of.html
+   - title: Ng4 тестовий проект Lading Page.
+     href: http://vlikin.blogspot.com/2017/07/ng4-test-lading-page.html
+   - title: Viktor Fitness - Continuos Integration.
+     href: http://vlikin.blogspot.com/2017/07/viktor-fitness-continuos-integration.html
+   - title: Drupal 8 тестове заадання для команіі DAXX
+     href: http://vlikin.blogspot.com/2017/06/drupal-8-test-task-for-daxx.html

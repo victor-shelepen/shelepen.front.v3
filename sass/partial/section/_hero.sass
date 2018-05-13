@@ -1,51 +1,20 @@
 .section
   &.hero
-    background-repeat: no-repeat
+    height: 100vh
     background-size: cover
-    color: white
-    background-image: url('/images/background-c.jpg')
-    background-position: center
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: flex-start
 
-    +desktop
-      background-image: url('/images/background.jpg')
+    @media #{$medium-and-down}
+      background-image: url('/images/hero-bg-m-a.jpg')
+    @media #{$small-and-down}
+      background-image: url('/images/hero-bg-s-a.jpg')
+    @media #{$large-and-up}
+      background-image: url('/images/hero-bg-l-a.jpg')
+    @media #{$extra-large-and-up}
+      background-image: url('/images/hero-bg-e-a.jpg')
 
-    >.text
-      background-color: rgba(0,0,0, 0.5)
-      padding: 0.5em
-      position: absolute
-      bottom: 0px
-      box-sizing: border-box
-      width: 100%
-      >.fullname
-        text-align: center
-        font-size: 1.3rem
-        font-weight: bold
-      >.position
-        text-align: center
-        font-size: 1.3rem
-      >.button
-        display: block
-        border: 1px solid white
-        text-align: center
-        padding: 0.3rem
-        margin: 0rem
-
-      +desktop
-       background: transparent
-
-    +desktop
-      >.text
-        position: absolute
-        bottom: 10px
-        padding: 2em
-        text-align: center
-        >.fullname
-          font-size: 2rem
-          font-family: 'Nothing You Could Do', cursive
-        >.position
-          font-size: 1rem
-          font-family: 'Nothing You Could Do', cursive
-        >.button
-          display: inline-block
-          padding: .5rem
-          font-size: 1rem
+      .card
+        flex: 0 0 auto

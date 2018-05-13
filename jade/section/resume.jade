@@ -1,7 +1,14 @@
 div.container
-  for position in section.resume[lng]
-    div.slide
-      div.inner
-        div.company-name-position= position.position + ' at ' + position.company
-        div.place-period= position.place + ' - ' + position.period
-        div.description= position.description
+  div.row
+    div.col.m12
+      h1.center-align= section.resume[lng].title
+  div.col.m12
+    ul(data-collapsible="accordion").collapsible.popout
+      for position in section.resume[lng].position
+        li
+          div.collapsible-header= position.position + ' at ' + position.company
+          div.collapsible-body
+            div.place-period= position.place + ' - ' + position.period
+            span= position.description
+div.center-align
+  a.waves-effect.waves-light.btn-large(href='#{section.resume[lng].call_to_action.href}')= section.resume[lng].call_to_action.title

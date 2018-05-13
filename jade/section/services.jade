@@ -1,6 +1,16 @@
 div.container
-  div.title= section.services[lng].title
-  for service in section.services[lng].services
-    div.service
-      div.title= service.title
-      div.content= service.content
+  div.col.m12
+    h1.center-align= section.services[lng].title
+  div.row
+    each service, key in section.services[lng].services
+      div.col.s12.m4.l4
+        div.card.hoverable
+          div.card-image.waves-effect.waves-block.waves-light
+            img.activator(src="/images/services/#{key}.png")
+          div.card-content
+            span.card-title.activator.grey-text.text-darken-4.truncate= service.title
+          div.card-reveal
+            span.card-title.grey-text.text-darken-4
+              span.center-align= service.title
+              i.material-icons.right close
+            p= service.content

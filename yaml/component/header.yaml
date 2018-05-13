@@ -3,22 +3,37 @@ en:
     home: Home
     contact: Contact
     aboutMe: About Me
+    blog: Blog
     resume: Resume
     services: Services
     contact: Contact
+  lang:
+    en: Eng
+    ru: Rus
+    uk: Ukr
 ru:
   menu:
     home: Домашняя
     contact: Контакты
+    blog: Блог
     aboutMe: Обо мне
     resume: Резюме
     services: Услуги
     contact: Контакты
+  lang:
+    en: Анг
+    ru: Рус
+    uk: Укр
 uk:
   menu:
-      home: Домашня
-      contact: Контакти
-      aboutMe: Про мене
-      resume: Резюме
-      services: Послуги
-      contact: Контакти
+    home: Домашня
+    contact: Контакти
+    aboutMe: Про мене
+    blog: Блог
+    resume: Резюме
+    services: Послуги
+    contact: Контакти
+  lang:
+    en: Анг
+    ru: Рос
+    uk: Укр

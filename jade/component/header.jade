@@ -1,16 +1,57 @@
-div#header
-  div.material-icons.logo timelapse
-  div.material-icons.mobile-menu-button menu
-  div.menu
-    div.material-icons.close-button arrow_back
-    div.link(data-href="heroPage")= component.header[lng].menu.home
-    div.link(data-href="aboutMePage")= component.header[lng].menu.aboutMe
-    div.link(data-href="resumePage")= component.header[lng].menu.resume
-    div.link(data-href="servicesPage")= component.header[lng].menu.services
-    div.link(data-href="contactPage")= component.header[lng].menu.contact
-    if lng != 'en'
-      div.link
-        a.link(href="/en/index.html") English
-    if lng != 'ru'
-      div.link
-        a.link(href="/ru/index.html") Russian
+div#header-section.navbar-fixed
+  nav
+    div.nav-wrapper
+      a(href="#" data-activates="slide-out").button-collapse
+        i.material-icons menu
+      a.brand-logo(href="#")
+        i.large.material-icons.logo timelapse
+      ul#nav-mobile.right.hide-on-med-and-down
+        li
+          a(onclick="_moveTo('.section.hero')")= component.header[lng].menu.home
+        li
+          a(onclick="_moveTo('.section.about-me')")= component.header[lng].menu.aboutMe
+        li
+          a(onclick="_moveTo('.section.blog')")= component.header[lng].menu.blog
+        li
+          a(onclick="_moveTo('.section.resume')")= component.header[lng].menu.resume
+        li
+          a(onclick="_moveTo('.section.services')")= component.header[lng].menu.services
+        li
+          a(onclick="_moveTo('.section.contact')")= component.header[lng].menu.contact
+        li
+          a(href="/en")= component.header[lng].lang.en
+        li
+          a(href="/ru")= component.header[lng].lang.ru
+        li
+          a(href="/uk")= component.header[lng].lang.uk
+
+ul#slide-out.side-nav
+  li
+    div.user-view
+      div.background
+        img(src="/images/slide-out-bg.jpg")
+      a(href="#!user")
+        img.circle(src="/images/face-64x64.jpg")
+        a(href="#!name")
+          span.white-text.name Viktor
+        a(href="#!email")
+          span.white-text.email viktor.likin@gmail.com
+  li
+    ul
+      li
+        a(onclick="_moveTo('.section.hero')")= component.header[lng].menu.home
+      li
+        a(onclick="_moveTo('.section.about-me')")= component.header[lng].menu.aboutMe
+      li
+        a(onclick="_moveTo('.section.resume')")= component.header[lng].menu.resume
+      li
+        a(onclick="_moveTo('.section.services')")= component.header[lng].menu.services
+      li
+        a(onclick="_moveTo('.section.contact')")= component.header[lng].menu.contact
+      li
+        a(href="/en")= component.header[lng].lang.en
+      li
+        a(href="/ru")= component.header[lng].lang.ru
+      li
+        a(href="/uk")= component.header[lng].lang.uk
+

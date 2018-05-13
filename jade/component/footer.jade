@@ -1,1 +1,17 @@
-div footer
+footer.page-footer
+  div.container
+    div.row
+      div.col.l4.offset-l2.s12
+        ul.menu
+          li
+            a.grey-text.text-lighten-3(onclick="_moveTo('.section.hero')")= component.header[lng].menu.home
+          li
+            a.grey-text.text-lighten-3(onclick="_moveTo('.section.about-me')")= component.header[lng].menu.aboutMe
+          li
+            a.grey-text.text-lighten-3(onclick="_moveTo('.section.resume')")= component.header[lng].menu.resume
+          li
+            a.grey-text.text-lighten-3(onclick="_moveTo('.section.services')")= component.header[lng].menu.services
+          li
+            a.grey-text.text-lighten-3(onclick="_moveTo('.section.contact')")= component.header[lng].menu.contact
+  div.footer-copyright
+    div.container= component.footer[lng].copyright
