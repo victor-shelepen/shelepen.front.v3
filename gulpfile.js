@@ -1,6 +1,6 @@
 var
   gulp = require('gulp'),
-  jade = require('gulp-jade'),
+  pug = require('gulp-pug'),
   concat = require('gulp-concat'),
   browserSync = require('browser-sync'),
   reload = browserSync.reload,
@@ -41,7 +41,7 @@ gulp.task('build', function() {
   });
 });
 
-gulp.task('jade', function() {
+gulp.task('pug', function() {
   var data = {
     lng: 'en',
     section: {},
@@ -58,8 +58,8 @@ gulp.task('jade', function() {
   function compile(data, lng) {
     let locals = lodash.cloneDeep(data);
     locals.lng = lng;
-    return gulp.src('./jade/index.jade')
-      .pipe(jade({
+    return gulp.src('./pug/index.pug')
+      .pipe(pug({
         pretty: true,
         locals: locals
       }))
@@ -104,9 +104,9 @@ gulp.task('serve', function () {
     }
   });
   gulp.watch('./sass/**/*.sass', ['sass']);
-  gulp.watch('./jade/**/*.jade', ['jade']);
+  gulp.watch('./pug/**/*.pug', ['pug']);
   gulp.watch('./js/**/*.js', ['js']);
-  gulp.watch('./yaml/**/*.yaml', ['js', 'jade']);
+  gulp.watch('./yaml/**/*.yaml', ['js', 'pug']);
 });
 
-gulp.task('default', [ 'sass', 'jade', 'js' ]);
+gulp.task('default', [ 'sass', 'pug', 'js' ]);
