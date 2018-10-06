@@ -13,7 +13,7 @@ var
 gulp.task('sass', function () {
   gulp.src('./sass/**/*.sass')
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('./www/css'))
+    .pipe(gulp.dest('./www/static/css'))
     .pipe(reload({stream: true}));
 });
 
@@ -74,7 +74,7 @@ gulp.task('pug', function() {
 gulp.task('js', function() {
   return gulp.src('src/entry.js')
     .pipe(webpack( require('./webpack.config.js') ))
-    .pipe(gulp.dest('www/'))
+    .pipe(gulp.dest('www/static'))
     .pipe(reload({stream: true}));
 });
 
@@ -86,7 +86,7 @@ gulp.task('compile_vendor', function () {
     './www/node_modules/materialize-css/dist/js/materialize.min.js'
    ])
     .pipe(concat('vendor.js'))
-    .pipe(gulp.dest('./www/js/'));
+    .pipe(gulp.dest('./www/static/js/'));
 });
 
 gulp.task('build-server', function () {
