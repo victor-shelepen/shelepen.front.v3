@@ -29,7 +29,7 @@ gulp.task('build', function() {
     'js',
     'en',
     'ru',
-    'uk',
+    'ua',
     'images',
     'index.html',
     'CNAME'
@@ -68,7 +68,7 @@ gulp.task('pug', function() {
   }
   compile(data, 'en');
   compile(data, 'ru');
-  compile(data, 'uk');
+  compile(data, 'ua');
 });
 
 gulp.task('js', function() {
