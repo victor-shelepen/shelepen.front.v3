@@ -1,34 +1,58 @@
 .section
   &.contact
-    .social
-      display: inline-block
+    background-image: url('/static/images/contacts-bg.jpg')
+    background-size: cover
+    display: flex
+    justify-content: center
+    flex-direction: row
 
-      >a
-        width: 0
-        height: 0
-        &:before
-          content: ''
-          display: inline-block
-          background-image: url('/static/images/socials/drupal.svg')
-          background-size: cover
-          width: 32px
-          height: 32px
+    >.section-container
+      margin: 20px
+      background-color: rgba(200, 200, 200, 0.8)
+      padding: 20px
+      >.columns
+        //width: 400px
+        display: flex
+        flex-direction: row
 
-        &.drupal:before
-          background-image: url('/static/images/socials/drupal.svg')
-          background-size: cover
-        &.twitter:before
-          background-image: url('/static/images/socials/twitter.svg')
-          background-size: cover
-        &.facebook:before
-          background-image: url('/static/images/socials/facebook.svg')
-          background-size: cover
-        &.linkedin:before
-          background-image: url('/static/images/socials/linkedin.svg')
-          background-size: cover
-        &.github:before
-          background-image: url('/static/images/socials/github.svg')
-          background-size: cover
-        &.stackoverflow:before
-          background-image: url('/static/images/socials/stackoverflow.svg')
-          background-size: cover
+        .info-block
+          flex: 1 1 auto
+          display: flex
+          flex-direction: column
+        .social-block
+          flex: 1 1 auto
+          display: flex
+          flex-direction: row
+          justify-content: center
+          align-items: center
+
+          >.icons-container
+            >a
+              width: 0
+              height: 0
+              &:before
+                content: ''
+                display: inline-block
+                background-image: url('/static/images/socials/drupal.svg')
+                background-size: cover
+                width: 32px
+                height: 32px
+
+              &.drupal:before
+                background-image: url('/static/images/socials/drupal.svg')
+                background-size: cover
+              &.twitter:before
+                background-image: url('/static/images/socials/twitter.svg')
+                background-size: cover
+              &.facebook:before
+                background-image: url('/static/images/socials/facebook.svg')
+                background-size: cover
+              &.linkedin:before
+                background-image: url('/static/images/socials/linkedin.svg')
+                background-size: cover
+              &.github:before
+                background-image: url('/static/images/socials/github.svg')
+                background-size: cover
+              &.stackoverflow:before
+                background-image: url('/static/images/socials/stackoverflow.svg')
+                background-size: cover
