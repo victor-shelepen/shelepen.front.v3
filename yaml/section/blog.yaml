@@ -1,54 +1,84 @@
 en:
- title: Blog
- call_to_action:
-  title: ALL ARTICLES
-  href: http://vlikin.blogspot.com/
- articles:
-  - title: Development approaches of Shelepen's Personal Site.
+  title: Blog
+  call_to_action:
+    title: ALL ARTICLES
+    href: http://vlikin.blogspot.com/
+  articles:
+  - title: Dedicated library JS scope by Webpack for a Drupal behaviour
+    href: http://vlikin.blogspot.com/2018/07/dedicated-library-js-scope-by-webpack.html
+  - title: TDD is my best Swagger
+    href: http://vlikin.blogspot.com/2018/06/tdd-is-my-best-swagger.html
+  - title: Very dynamic page with many components based on Angular surrounded technologies
+    href: http://vlikin.blogspot.com/2018/06/a-page-with-very-dynamic-page-with-many.html
+  - title: Drupal development docker compose
+    href: http://vlikin.blogspot.com/2018/04/drupal-development-docker-compose.html
+  - title: Docker based production environment
+    href: http://vlikin.blogspot.com/2018/04/docker-based-production-environment.html
+  - title: Development approaches of Shelepen's personal site
     href: http://vlikin.blogspot.com/2018/03/development-approaches-of-shelepens.html
-  - title: Shelepen.com.ua Personal Site again.
+  - title: Shelepen.com.ua personal site again
     href: http://vlikin.blogspot.com/2018/03/shelepencomua-personal-site-again.html
   - title: D8 Test Task. Display filtered list of items.
     href: http://vlikin.blogspot.com/2017/12/d8-test-task-display-filtered-list-of.html
-  - title: Ng4 Test Lading Page.
-    href: http://vlikin.blogspot.com/2017/07/ng4-test-lading-page.html
-  - title: Viktor Fitness - Continuos Integration.
+  - title: Ng4 Test Landing Page
+    href: http://vlikin.blogspot.com/2017/07/ng4-test-landing-page.html
+  - title: Viktor Fitness - Continuos Integration
     href: http://vlikin.blogspot.com/2017/07/viktor-fitness-continuos-integration.html
   - title: Drupal 8 Test Task for DAXX
     href: http://vlikin.blogspot.com/2017/06/drupal-8-test-task-for-daxx.html
 ru:
- title: Блог
- call_to_action:
-   title: ВСЕ СТАТЬИ
-   href: http://vlikin.blogspot.com/
- articles:
+  title: Блог
+  call_to_action:
+    title: ВСЕ СТАТЬИ
+    href: http://vlikin.blogspot.com/
+  articles:
+  - title: Выделенный scope JS библиотек, собранных Webpack(ом) для Drupal behaviour
+    href: http://vlikin.blogspot.com/2018/07/dedicated-library-js-scope-by-webpack.html
+  - title: TDD - это лучший Swagger
+    href: http://vlikin.blogspot.com/2018/06/tdd-is-my-best-swagger.html
+  - title: Очень динамическая страница, построенная на компонентах Angular и других его библиотеках
+    href: http://vlikin.blogspot.com/2018/06/a-page-with-very-dynamic-page-with-many.html
+  - title: Drupal docker compose для разработки
+    href: http://vlikin.blogspot.com/2018/04/drupal-development-docker-compose.html
+  - title: Production среда, работающая на docker
+    href: http://vlikin.blogspot.com/2018/04/docker-based-production-environment.html
   - title: Особенности разработки персонального сайта Shelepen.com.ua
     href: http://vlikin.blogspot.com/2018/03/development-approaches-of-shelepens.html
   - title: Снова про персональный сайт Shelepen.com.ua.
     href: http://vlikin.blogspot.com/2018/03/shelepencomua-personal-site-again.html
   - title: Тестовое задание на Drupal 8. Отображения фильтруемого списка.
     href: http://vlikin.blogspot.com/2017/12/d8-test-task-display-filtered-list-of.html
-  - title: Ng4 тестовый проект Lading Page.
+  - title: Ng4 тестовый проект Landing Page.
     href: http://vlikin.blogspot.com/2017/07/ng4-test-lading-page.html
   - title: Viktor Fitness - Continuos Integration.
     href: http://vlikin.blogspot.com/2017/07/viktor-fitness-continuos-integration.html
   - title: Drupal 8 тестовое задание для комании DAXX
     href: http://vlikin.blogspot.com/2017/06/drupal-8-test-task-for-daxx.html
 ua:
- title: Блог
- call_to_action:
-   title: ВСІ СТАТТІ
-   href: http://vlikin.blogspot.com/
- articles:
-   - title: Особливості розробки персонального сайту Shelepen.com.ua
-     href: http://vlikin.blogspot.com/2018/03/development-approaches-of-shelepens.html
-   - title: Знову про персональний сайт Shelepen.com.ua.
-     href: http://vlikin.blogspot.com/2018/03/shelepencomua-personal-site-again.html
-   - title: Тестове завдання на Drupal 8. Відображення фільтруємого списку.
-     href: http://vlikin.blogspot.com/2017/12/d8-test-task-display-filtered-list-of.html
-   - title: Ng4 тестовий проект Lading Page.
-     href: http://vlikin.blogspot.com/2017/07/ng4-test-lading-page.html
-   - title: Viktor Fitness - Continuos Integration.
-     href: http://vlikin.blogspot.com/2017/07/viktor-fitness-continuos-integration.html
-   - title: Drupal 8 тестове заадання для команіі DAXX
-     href: http://vlikin.blogspot.com/2017/06/drupal-8-test-task-for-daxx.html
+  title: Блог
+  call_to_action:
+    title: ВСІ СТАТТІ
+    href: http://vlikin.blogspot.com/
+  articles:
+  - title: Окремий scope JS бібліотек, зібраних Webpack(ом) для Drupal behaviour
+    href: http://vlikin.blogspot.com/2018/07/dedicated-library-js-scope-by-webpack.html
+  - title: TDD - це кращий Swagger
+    href: http://vlikin.blogspot.com/2018/06/tdd-is-my-best-swagger.html
+  - title: Дуже динамічна сторінка, яка побудована на компонентах Angular та інших бібліотеках
+    href: http://vlikin.blogspot.com/2018/06/a-page-with-very-dynamic-page-with-many.html
+  - title: Drupal docker compose для розробки
+    href: http://vlikin.blogspot.com/2018/04/drupal-development-docker-compose.html
+  - title: Production середа, працюючая на docker
+    href: http://vlikin.blogspot.com/2018/04/docker-based-production-environment.html
+  - title: Особливості розробки персонального сайту Shelepen.com.ua
+    href: http://vlikin.blogspot.com/2018/03/development-approaches-of-shelepens.html
+  - title: Знову про персональний сайт Shelepen.com.ua.
+    href: http://vlikin.blogspot.com/2018/03/shelepencomua-personal-site-again.html
+  - title: Тестове завдання на Drupal 8. Відображення списку, що фільтрується.
+    href: http://vlikin.blogspot.com/2017/12/d8-test-task-display-filtered-list-of.html
+  - title: Ng4 тестовий проект Landing Page.
+    href: http://vlikin.blogspot.com/2017/07/ng4-test-lading-page.html
+  - title: Viktor Fitness - Continuos Integration.
+    href: http://vlikin.blogspot.com/2017/07/viktor-fitness-continuos-integration.html
+  - title: Drupal 8 тестове заадання для компанії DAXX
+    href: http://vlikin.blogspot.com/2017/06/drupal-8-test-task-for-daxx.html
