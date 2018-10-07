@@ -1,7 +1,4 @@
 .idea
 node_modules
-www/*
-!www/images
-!www/package.json
-!www/index.html
-!www/CNAME
+www/static/js
+www/static/css
