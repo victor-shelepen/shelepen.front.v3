@@ -3,7 +3,7 @@ div.container
     h1.center-align= section.services[lng].title
   div.row
     each service, key in section.services[lng].services
-      div.col.s12.m4.l4
+      div.col.s12.m4.l4.card-wrapper
         div.card.hoverable
           div.card-image.waves-effect.waves-block.waves-light
             img.activator(src='/static/images/services/'+ key + '.png')

@@ -1,29 +1,29 @@
 div#header-section.navbar-fixed
   nav
     div.nav-wrapper
-      a(href="#" data-activates="slide-out").button-collapse
+      a.link-menu(href="#" data-activates="slide-out").button-collapse
         i.material-icons menu
       a.brand-logo(href="#")
         i.large.material-icons.logo timelapse
       ul#nav-mobile.right.hide-on-med-and-down
         li
-          a(onclick="_moveTo('.section.hero')")= component.header[lng].menu.home
+          a.link-home(onclick="_moveTo('.section.hero')")= component.header[lng].menu.home
         li
-          a(onclick="_moveTo('.section.about-me')")= component.header[lng].menu.aboutMe
+          a.link-aboutMe(onclick="_moveTo('.section.about-me')")= component.header[lng].menu.aboutMe
         li
-          a(onclick="_moveTo('.section.blog')")= component.header[lng].menu.blog
+          a.link-blog(onclick="_moveTo('.section.blog')")= component.header[lng].menu.blog
         li
-          a(onclick="_moveTo('.section.resume')")= component.header[lng].menu.resume
+          a.link-resume(onclick="_moveTo('.section.resume')")= component.header[lng].menu.resume
         li
-          a(onclick="_moveTo('.section.services')")= component.header[lng].menu.services
+          a.link-services(onclick="_moveTo('.section.services')")= component.header[lng].menu.services
         li
-          a(onclick="_moveTo('.section.contact')")= component.header[lng].menu.contact
+          a.link-contacts(onclick="_moveTo('.section.contact')")= component.header[lng].menu.contact
         li
-          a(href="/en")= component.header[lng].lang.en
+          a.link-en(href="/en")= component.header[lng].lang.en
         li
-          a(href="/ru")= component.header[lng].lang.ru
+          a.link-ru(href="/ru")= component.header[lng].lang.ru
         li
-          a(href="/ua")= component.header[lng].lang.ua
+          a.link-ua(href="/ua")= component.header[lng].lang.ua
 
 ul#slide-out.side-nav
   li
@@ -39,19 +39,20 @@ ul#slide-out.side-nav
   li
     ul
       li
-        a(onclick="_moveTo('.section.hero')")= component.header[lng].menu.home
+        a.link-home.sidenav-close(onclick="_moveTo('.section.hero')")= component.header[lng].menu.home
       li
-        a(onclick="_moveTo('.section.about-me')")= component.header[lng].menu.aboutMe
+        a.link-aboutMe.sidenav-close(onclick="_moveTo('.section.about-me')")= component.header[lng].menu.aboutMe
       li
-        a(onclick="_moveTo('.section.resume')")= component.header[lng].menu.resume
+        a.link-blog.sidenav-close(onclick="_moveTo('.section.blog')")= component.header[lng].menu.blog
       li
-        a(onclick="_moveTo('.section.services')")= component.header[lng].menu.services
+        a.link-resume.sidenav-close(onclick="_moveTo('.section.resume')")= component.header[lng].menu.resume
       li
-        a(onclick="_moveTo('.section.contact')")= component.header[lng].menu.contact
+        a.link-services.sidenav-close(onclick="_moveTo('.section.services')")= component.header[lng].menu.services
       li
-        a(href="/en")= component.header[lng].lang.en
+        a.link-contacts.sidenav-close(onclick="_moveTo('.section.contact')")= component.header[lng].menu.contact
       li
-        a(href="/ru")= component.header[lng].lang.ru
+        a.link-en(href="/en")= component.header[lng].lang.en
       li
-        a(href="/ua")= component.header[lng].lang.ua
-
+        a.link-ru(href="/ru")= component.header[lng].lang.ru
+      li
+        a.link-ua(href="/ua")= component.header[lng].lang.ua

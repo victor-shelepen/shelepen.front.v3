@@ -1,6 +1,7 @@
 //import $ from 'jquery';
 
 window._moveTo = (anchor) => {
+  $('.button-collapse').sideNav('hide');
   $('html, body').stop().animate({
     scrollTop: $(anchor).offset().top - 64
   }, 400);
