@@ -23,14 +23,15 @@ gulp.task('build', function() {
   if (fs.ensureDirSync(buildDirName)) {
     fs.removeSync(buildDirName);
     fs.mkdirSync(buildDirName);
+    fs.mkdirSync(buildDirName + '/static');
   }
   [
-    'css',
-    'js',
+    'static/css',
+    'static/js',
     'en',
     'ru',
     'ua',
-    'images',
+    'static/images',
     'index.html',
     'CNAME'
   ].forEach((item) => {
