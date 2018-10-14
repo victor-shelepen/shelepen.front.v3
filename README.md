@@ -57,5 +57,19 @@ Delete the temporary branch
 git branch -D gh-pages-preparation
 ```
 
+## Test running
+Protractor have to be installed, [look at](https://www.protractortest.org).
+### Run tests on the desktop.
+```
+  protractor ./e2e/default.config.js 
+```
+
+### Run tests on the mobile.
+```
+  protractor ./e2e/mobile.config.js 
+``` 
+### Options
+By default the test checks the local server ```http://localhost:3000```. You can define another URL.
+
 ## Links
 * [Deploying a subfolder to GitHub Pages](https://gist.github.com/cobyism/4730490)
