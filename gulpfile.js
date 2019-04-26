@@ -1,5 +1,6 @@
 const
   { src, dest, parallel, watch } = require('gulp');
+  fs = require('fs-extra'),
   pug = require('gulp-pug'),
   concat = require('gulp-concat'),
   browserSync = require('browser-sync'),
@@ -13,7 +14,7 @@ const
   webpack = require('webpack-stream');
 
 function sassTask() {
-  return src('sass/**/*.scss')
+  return src('sass/**/*.sass')
     .pipe(sourcemaps.init())
     .pipe(sass())
     .pipe(autoprefixer({
@@ -122,6 +123,8 @@ function serveTask() {
     .on('change', browserSync.stream);
 }
 
+const defaultTask = parallel(sassTask, pugTask, jsTask)
+
 exports.sass = sassTask;
 exports.pug = pugTask;
 exports.js = jsTask;
@@ -129,3 +132,4 @@ exports.compileVendor = compileVendorTask;
 exports.build = buildTask;
 exports.buildServer = buildServerTask;
 exports.serve = serveTask;
+exports.default = defaultTask;

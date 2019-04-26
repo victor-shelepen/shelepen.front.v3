@@ -28,6 +28,11 @@ Create a temporary branch.
 ```
 git checkout -b gh-pages-preparation
 ```
+Install packages these are used as sources for compilation.
+```
+cd www
+npm i
+```
 Compile code
 ```
 gulp default
