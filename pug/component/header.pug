@@ -17,6 +17,8 @@ div#header-section.navbar-fixed
         li
           a.link-services(onclick="_moveTo('.section.services')")= component.header[lng].menu.services
         li
+          a.link-services.sidenav-close(onclick="_moveTo('.section.portfolio')")= component.header[lng].menu.portfolio
+        li
           a.link-contacts(onclick="_moveTo('.section.contact')")= component.header[lng].menu.contact
         li
           a.link-en(href="/en")= component.header[lng].lang.en
@@ -48,6 +50,8 @@ ul#slide-out.side-nav
         a.link-resume.sidenav-close(onclick="_moveTo('.section.resume')")= component.header[lng].menu.resume
       li
         a.link-services.sidenav-close(onclick="_moveTo('.section.services')")= component.header[lng].menu.services
+      li
+        a.link-services.sidenav-close(onclick="_moveTo('.section.portfolio')")= component.header[lng].menu.portfolio
       li
         a.link-contacts.sidenav-close(onclick="_moveTo('.section.contact')")= component.header[lng].menu.contact
       li

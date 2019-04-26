@@ -1,0 +1,42 @@
+en:
+  title: Portfolio
+  call_to_action:
+    title: ALL PORTFOLIO
+    href: http://vlikin.blogspot.com/search/label/portfolio
+  articles:
+  - title: Front end development KIT hosted on github pages
+    href: http://vlikin.blogspot.com/2019/04/front-end-development-kit-hosted-on.html
+  - title: Internet trading teaching platform
+    href: http://vlikin.blogspot.com/2019/04/internet-trading-teaching-platform.html
+  - title: Application Policy Manager. MVP review.
+    href: http://vlikin.blogspot.com/2019/04/application-policy-manager-mvp-review.html
+  - title: Shelepen.com.ua Personal Site again
+    href: http://vlikin.blogspot.com/2018/03/shelepencomua-personal-site-again.html
+ru:
+  title: Портфолио
+  call_to_action:
+    title: ВСЁ ПОРТФОЛИО
+    href: http://vlikin.blogspot.com/search/label/portfolio
+  articles:
+  - title: Набор Front разработчика, который может размещаться на страницах github pages
+    href: http://vlikin.blogspot.com/2019/04/front-end-development-kit-hosted-on.html
+  - title: Обучающая платформа электронной торговли
+    href: http://vlikin.blogspot.com/2019/04/internet-trading-teaching-platform.html
+  - title: Приложение управления правами доступа. MVP просмотр.
+    href: http://vlikin.blogspot.com/2019/04/application-policy-manager-mvp-review.html
+  - title: Shelepen.com.ua персональный сайт.
+    href: http://vlikin.blogspot.com/2018/03/shelepencomua-personal-site-again.html
+ua:
+  title: Портфоліо
+  call_to_action:
+    title: ВСЕ ПОРТФОЛИО
+    href: http://vlikin.blogspot.com/search/label/portfolio
+  articles:
+  - title: Набір Front розробника, який може розміщатися на сторінках github pages
+    href: http://vlikin.blogspot.com/2019/04/front-end-development-kit-hosted-on.html
+  - title: Навчальна платформа електронной торгівлі
+    href: http://vlikin.blogspot.com/2019/04/internet-trading-teaching-platform.html
+  - title: Додаток управління правами доступа. MVP огляд.
+    href: http://vlikin.blogspot.com/2019/04/application-policy-manager-mvp-review.html
+  - title: Shelepen.com.ua персональний сайт.
+    href: http://vlikin.blogspot.com/2018/03/shelepencomua-personal-site-again.html
