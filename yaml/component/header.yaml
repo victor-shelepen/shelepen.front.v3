@@ -5,6 +5,7 @@ en:
     blog: Blog
     resume: Resume
     services: Services
+    portfolio: Portfolio
     contact: Contacts
   lang:
     en: Eng
@@ -17,6 +18,7 @@ ru:
     aboutMe: Обо мне
     resume: Резюме
     services: Услуги
+    portfolio: Портфолио
     contact: Контакты
   lang:
     en: Анг
@@ -29,6 +31,7 @@ ua:
     blog: Блог
     resume: Резюме
     services: Послуги
+    portfolio: Портфоліо
     contact: Контакти
   lang:
     en: Анг
