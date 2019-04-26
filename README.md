@@ -38,7 +38,7 @@ gulp build
 ```
 Check results these were built.
 ```
-gulp build-server
+gulp buildServer
 ```
 * Uncomment `build` folder in the file `.gitignore`
 * Add the build and commit it

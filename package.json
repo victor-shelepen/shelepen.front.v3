@@ -17,23 +17,27 @@
   },
   "homepage": "https://github.com/vlikin/shelepen.front.v3#readme",
   "dependencies": {
-    "ajv": "^5.3.0",
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
-    "babel-preset-es2015": "^6.24.1",
-    "browser-sync": "^2.18.13",
-    "fs-extra": "^5.0.0",
-    "fullpage.js": "^2.9.5",
-    "gulp": "^3.9.1",
+    "ajv": "^6.10.0",
+    "browser-sync": "^2.26.5",
+    "fs-extra": "^7.0.1",
+    "fullpage.js": "^3.0.5",
+    "gulp": "^4.0.1",
+    "gulp-merge": "^0.1.1",
     "gulp-pug": "^4.0.1",
-    "gulp-sass": "^3.1.0",
-    "jasmine": "^3.2.0",
-    "lodash": "^4.17.4",
-    "webpack-stream": "^4.0.0",
+    "gulp-sass": "^4.0.2",
+    "jasmine": "^3.4.0",
+    "lodash": "^4.17.11",
+    "merge-stream": "^1.0.1",
+    "webpack-stream": "^5.2.1",
     "yamljs": "^0.3.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "babel-loader": "^8.0.5",
+    "gulp-autoprefixer": "^6.1.0",
     "gulp-concat": "^2.6.1",
-    "webpack-bundle-analyzer": "^2.11.1"
+    "gulp-sourcemaps": "^2.6.5",
+    "webpack-bundle-analyzer": "^3.3.2"
   }
 }
