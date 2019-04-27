@@ -47,6 +47,8 @@ function buildTask() {
       buildDirName + '/' + item
     );
   });
+
+  return Promise.resolve();
 }
 
 function pugTask() {
@@ -123,7 +125,7 @@ function serveTask() {
     .on('change', browserSync.stream);
 }
 
-const defaultTask = parallel(sassTask, pugTask, jsTask)
+const defaultTask = parallel(sassTask, pugTask, jsTask, compileVendorTask);
 
 exports.sass = sassTask;
 exports.pug = pugTask;
