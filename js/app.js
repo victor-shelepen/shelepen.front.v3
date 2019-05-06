@@ -12,6 +12,18 @@ $(document).ready(() => {
   $('.button-collapse').sideNav();
   $('.carousel.carousel-slider').carousel({fullWidth: true});
   $('.collapsible').collapsible();
+  $('#nav-mobile a, #slide-out .menu-items a').click((e) => {
+    const anchor = $(e.target).attr('href');
+    if (anchor[0] != '#') {
+      return;
+    }
+    e.preventDefault();
+    $('html, body').stop().animate({
+      scrollTop: $(anchor).offset().top - 64
+    }, 400, () => {
+      window.location.hash = anchor;
+    });
+  });
 });
 
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

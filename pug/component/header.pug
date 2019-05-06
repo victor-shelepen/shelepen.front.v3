@@ -7,19 +7,19 @@ div#header-section.navbar-fixed
         i.large.material-icons.logo timelapse
       ul#nav-mobile.right.hide-on-med-and-down
         li
-          a.link-home(onclick="_moveTo('.section.hero')")= component.header[lng].menu.home
+          a.link-home(href="#section-hero")= component.header[lng].menu.home
         li
-          a.link-aboutMe(onclick="_moveTo('.section.about-me')")= component.header[lng].menu.aboutMe
+          a.link-aboutMe(href="#section-about-me")= component.header[lng].menu.aboutMe
         li
-          a.link-blog(onclick="_moveTo('.section.blog')")= component.header[lng].menu.blog
+          a.link-blog(href="#section-blog")= component.header[lng].menu.blog
         li
-          a.link-resume(onclick="_moveTo('.section.resume')")= component.header[lng].menu.resume
+          a.link-resume(href="#section-resume")= component.header[lng].menu.resume
         li
-          a.link-services(onclick="_moveTo('.section.services')")= component.header[lng].menu.services
+          a.link-services(href="#section-services")= component.header[lng].menu.services
         li
-          a.link-services.sidenav-close(onclick="_moveTo('.section.portfolio')")= component.header[lng].menu.portfolio
+          a.link-services(href="#section-portfolio")= component.header[lng].menu.portfolio
         li
-          a.link-contacts(onclick="_moveTo('.section.contact')")= component.header[lng].menu.contact
+          a.link-contacts(href="#section-contact")= component.header[lng].menu.contact
         li
           a.link-en(href="/en")= component.header[lng].lang.en
         li
@@ -39,21 +39,21 @@ ul#slide-out.side-nav
         a(href="#!email")
           span.white-text.email viktor.likin@gmail.com
   li
-    ul
+    ul.menu-items
       li
-        a.link-home.sidenav-close(onclick="_moveTo('.section.hero')")= component.header[lng].menu.home
+        a.link-home.sidenav-close(href='#section-hero')= component.header[lng].menu.home
       li
-        a.link-aboutMe.sidenav-close(onclick="_moveTo('.section.about-me')")= component.header[lng].menu.aboutMe
+        a.link-aboutMe.sidenav-close(href='#section-about-me')= component.header[lng].menu.aboutMe
       li
-        a.link-blog.sidenav-close(onclick="_moveTo('.section.blog')")= component.header[lng].menu.blog
+        a.link-blog.sidenav-close(href='#section-blog')= component.header[lng].menu.blog
       li
-        a.link-resume.sidenav-close(onclick="_moveTo('.section.resume')")= component.header[lng].menu.resume
+        a.link-resume.sidenav-close(href='#section-resume')= component.header[lng].menu.resume
       li
-        a.link-services.sidenav-close(onclick="_moveTo('.section.services')")= component.header[lng].menu.services
+        a.link-services.sidenav-close(href='#section-services')= component.header[lng].menu.services
       li
-        a.link-services.sidenav-close(onclick="_moveTo('.section.portfolio')")= component.header[lng].menu.portfolio
+        a.link-services.sidenav-close(href='#section-portfolio')= component.header[lng].menu.portfolio
       li
-        a.link-contacts.sidenav-close(onclick="_moveTo('.section.contact')")= component.header[lng].menu.contact
+        a.link-contacts.sidenav-close(href='#section-contact')= component.header[lng].menu.contact
       li
         a.link-en(href="/en")= component.header[lng].lang.en
       li
