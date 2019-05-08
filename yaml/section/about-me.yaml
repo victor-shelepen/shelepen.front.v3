@@ -1,25 +1,32 @@
 en:
   title: About me
-  subtitle: Let's get friends
+  subtitle: >
+    This resource is mostly for people who would like working with me personally in different roles.
   personal: >
-    Hello, my name is Victor. I am 32 years old. I am married,
-    I have a daughter. I am an open-minded and easy going person.
+    Hello, my name is Victor. I am 33 years old. I am an open-minded and easy going person.
+    I presume you will not hear good words from people about me. Maybe I am crazy dope.
+    I am crazy labour. I live for results. To get real results you need work not walk.
+    I like walking because I understand that we are humans and all our resources are limited and we need recovery.
     I like challenging and tough tasks. I like engineering, painting, flowering.
     I visit a fitness club on a regular basis.
   professional: >
     I've got very wide professional experience in different branches.
     Now I am full-stack NodeJS developer. I like projects jobs.
     I handle all software development stages. I am not the best
-    I do not want to do it. Also, I have own disadvantages.
+    I do not want to do it so. Also, I have own disadvantages.
     My real advantage for you is that I am multi-professional,
     multi-technological employer in the single person that can handle
     and manage your IT problems with specified quality.
 ru:
   title: Обо мне
-  subtitle: Давайте дружить
+  subtitle: Этот ресурс в основном для людей, которые хотели бы работать со мной лично в разных ролях.
   personal: >
-    Здравствуйте, меня зовут Виктор. Мне 32 года, я женат и у меня есть дочка. Я спокойный и без каких-либо предубеждений. Мне нравятся
-    тяжелые, запутаные задачи, а также конструирование, рисование, цветоводство. Посещаю тренажерный зал.
+    Здравствуйте, меня зовут Виктор. Мне 33 года. Я открытый и спокойный человек.
+    Я полагаю, вы не услышите хороших слов от людей обо мне. Может быть, я сумасшедший наркоман.
+    Я сумасшедший трудоголик. Я живу ради результатов. Чтобы получить реальные результаты, вам нужно работать, а не ходить.
+    Мне нравится ходить, потому что я понимаю, что мы люди, и все наши ресурсы ограничены, и нам нужно востановление.
+    Мне нравятся сложные и сложные задачи. Я люблю конструирование, рисование, цветоводство.
+    Я посещаю фитнес-клуб на регулярной основе.
   professional: >
     Я получил много профессионального опыта в различных областях деятельности. Сейчас я full-stack NodeJS разработчик.
     Мне нравится попроектое сотрудничество, справляюсь со всеми этапами разработки. Я не лучший и у меня есть
@@ -27,10 +34,14 @@ ru:
     и я самостоятельно могу управлять и решать Ваши IT задачи с определенным уровнем качества самостоятельно.
 ua:
   title: Про мене
-  subtitle: Давайте товаришувати
+  subtitle: Цей ресурс в основному для людей, які хотіли б працювати зі мною особисто в різних ролях
   personal: >
-    Доброго дня, мене звуть Віктор. Мені 32 роки, я одружений і у мене є дочка. Я спокійний і без будь-яких упереджень. Мені подобаються
-    важкі, заплутані задачі, а також конструювання, малювання, квітникарство. Відвідую тренажерний зал.
+    Привіт, мене звуть Віктор. Мені 33 роки. Я - відкрита і без будь-яких упереджень людина.
+    Я припускаю, що ви не почуєте добрих слів від людей про мене. Може бути, я божевільна наркоман.
+    Я божевільний трудоголік. Я живу для результатів. Щоб отримати реальні результати, потрібно працювати не ходити.
+    Мені подобається ходити, тому що я розумію, що ми люди і всі наші ресурси обмежені і нам потрібне відновлення.
+    Мені подобаються важкі, заплутані завдання. Мені подобається  конструювання, малювання, квітникарство.
+    Я регулярно відвідую фітнес-клуб.
   professional: >
     Я отримав багато професійного досвіду в різноманітних областях діяльності. Зараз я full-stack NodeJS розробник.
     Мені подобається попроектна співпраця, справляюся з усіма етапами розробки. Я не найкращий і маю власні недоліки. Моя основна перевага в тому, що у мене є досвід і знання в багатьох сферах 

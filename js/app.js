@@ -9,7 +9,11 @@ window._moveTo = (anchor) => {
 
 $(document).ready(() => {
   $('.app-loading').css('display', 'none');
-  $('.button-collapse').sideNav();
+  $('.button-collapse')
+    .sideNav()
+    .on('click tap', 'li a', () => {
+      $('.sidenav').sidenav('close');
+    });
   $('.carousel.carousel-slider').carousel({fullWidth: true});
   $('.collapsible').collapsible();
   $('#nav-mobile a, #slide-out .menu-items a').click((e) => {
@@ -21,7 +25,7 @@ $(document).ready(() => {
     $('html, body').stop().animate({
       scrollTop: $(anchor).offset().top - 64
     }, 400, () => {
-      window.location.hash = anchor;
+      history.pushState(null, null, anchor);
     });
   });
 });
