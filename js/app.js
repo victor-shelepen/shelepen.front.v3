@@ -9,11 +9,7 @@ window._moveTo = (anchor) => {
 
 $(document).ready(() => {
   $('.app-loading').css('display', 'none');
-  $('.button-collapse')
-    .sideNav()
-    .on('click tap', 'li a', () => {
-      $('.sidenav').sidenav('close');
-    });
+  $('.button-collapse').sideNav();
   $('.carousel.carousel-slider').carousel({fullWidth: true});
   $('.collapsible').collapsible();
   $('#nav-mobile a, #slide-out .menu-items a').click((e) => {
