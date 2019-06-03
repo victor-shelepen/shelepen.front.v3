@@ -4,6 +4,8 @@ en:
     title: ALL PORTFOLIO
     href: http://vlikin.blogspot.com/search/label/portfolio
   articles:
+  - title: Drupal 8 based marketing site for Diffy that is a visual regression testing tool
+    href: http://vlikin.blogspot.com/2019/06/drupal-8-based-marketing-site-for-diffy.html
   - title: Front end development KIT hosted on github pages
     href: http://vlikin.blogspot.com/2019/04/front-end-development-kit-hosted-on.html
   - title: Internet trading teaching platform
@@ -18,6 +20,8 @@ ru:
     title: ВСЁ ПОРТФОЛИО
     href: http://vlikin.blogspot.com/search/label/portfolio
   articles:
+  - title: Маркетинговый сайт для Diffy, визуального инстумента тестирования.
+    href: http://vlikin.blogspot.com/2019/06/drupal-8-based-marketing-site-for-diffy.html
   - title: Набор Front разработчика, который может размещаться на страницах github pages
     href: http://vlikin.blogspot.com/2019/04/front-end-development-kit-hosted-on.html
   - title: Обучающая платформа электронной торговли
@@ -32,6 +36,8 @@ ua:
     title: ВСЕ ПОРТФОЛИО
     href: http://vlikin.blogspot.com/search/label/portfolio
   articles:
+  - title: Маркетинговий сайт для Diffy, візуального інстумента тестування.
+    href: http://vlikin.blogspot.com/2019/06/drupal-8-based-marketing-site-for-diffy.html
   - title: Набір Front розробника, який може розміщатися на сторінках github pages
     href: http://vlikin.blogspot.com/2019/04/front-end-development-kit-hosted-on.html
   - title: Навчальна платформа електронной торгівлі
