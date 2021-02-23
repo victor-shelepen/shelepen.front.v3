@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+    <head>
+      <style type="text/css">
+        body, html {
+          height: 100%;
+        }
+        
+        .app-loading {
+          background: #162337;
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          height: 100%;
+        }
+        
+        .app-loading .spinner {
+          height: 200px;
+          width: 200px;
+          width: 200px;
+          animation: rotate 2s linear infinite;
+          transform-origin: center center;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin: auto;
+        }
+        
+        .app-loading .spinner .path {
+          stroke-dasharray: 1, 200;
+          stroke-dashoffset: 0;
+          animation: dash 1.5s ease-in-out infinite;
+          stroke-linecap: round;
+          stroke: #ddd;
+        }
+        
+        @keyframes rotate {
+          100% {
+            transform: rotate(360deg);
+          }
+        }
+        
+        @keyframes dash {
+          0% {
+            stroke-dasharray: 1, 200;
+            stroke-dashoffset: 0;
+          }
+          50% {
+            stroke-dasharray: 89, 200;
+            stroke-dashoffset: -35px;
+          }
+          100% {
+            stroke-dasharray: 89, 200;
+            stroke-dashoffset: -124px;
+          }
+        }
+        
+        .app-loading .logo {
+          width: 100px;
+          height: 100px;
+          background: url("/static/images/logo-loading.png") center center no-repeat;
+          background-size: contain;
+        }
+        
+      </style>
+    </head>
+  </head>
+  <body>
+    <div class="app-loading">
+      <div class="logo"></div>
+      <svg class="spinner" viewBox="25 25 50 50">
+        <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle>
+      </svg>
+    </div>
+    <div id="outer-body">
+      <div class="navbar-fixed" id="header-section">
+        <nav>
+          <div class="nav-wrapper"><a class="link-menu button-collapse" href="#" data-activates="slide-out"><i class="material-icons">menu</i></a><a class="brand-logo" href="#"><i class="large material-icons logo">timelapse</i></a>
+            <ul class="right hide-on-med-and-down" id="nav-mobile">
+              <li><a class="link-home" href="#section-hero">Домашняя</a></li>
+              <li><a class="link-aboutMe" href="#section-about-me">Обо мне</a></li>
+              <li><a class="link-blog" href="#section-blog">Блог</a></li>
+              <li><a class="link-resume" href="#section-resume">Резюме</a></li>
+              <li><a class="link-services" href="#section-services">Услуги</a></li>
+              <li><a class="link-services" href="#section-portfolio">Портфолио</a></li>
+              <li><a class="link-contacts" href="#section-contact">Контакты</a></li>
+              <li><a class="link-en" href="/en">Анг</a></li>
+              <li><a class="link-ru" href="/ru">Рус</a></li>
+              <li><a class="link-ua" href="/ua">Укр</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <ul class="side-nav" id="slide-out">
+        <li>
+          <div class="user-view">
+            <div class="background"><img src="/static/images/slide-out-bg.jpg"></div><a href="#!user"><img class="circle" src="/static/images/face-64x64.jpg"><a href="#!name"><span class="white-text name">Viktor</span></a><a href="#!email"><span class="white-text email">viktor.likin@gmail.com</span></a></a>
+          </div>
+        </li>
+        <li>
+          <ul class="menu-items">
+            <li><a class="link-home sidenav-close" href="#section-hero">Домашняя</a></li>
+            <li><a class="link-aboutMe sidenav-close" href="#section-about-me">Обо мне</a></li>
+            <li><a class="link-blog sidenav-close" href="#section-blog">Блог</a></li>
+            <li><a class="link-resume sidenav-close" href="#section-resume">Резюме</a></li>
+            <li><a class="link-services sidenav-close" href="#section-services">Услуги</a></li>
+            <li><a class="link-services sidenav-close" href="#section-portfolio">Портфолио</a></li>
+            <li><a class="link-contacts sidenav-close" href="#section-contact">Контакты</a></li>
+            <li><a class="link-en" href="/en">Анг</a></li>
+            <li><a class="link-ru" href="/ru">Рус</a></li>
+            <li><a class="link-ua" href="/ua">Укр</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div id="section-container">
+        <div class="section hero" id="section-hero">
+          <div class="card blue-grey darken-1 hoverable">
+            <div class="card-content white-text center-align"><span class="card-title">Виктор Шелепень</span>
+              <p>Fullstack Web Разработчик</p>
+              <div class="card-action"><a class="waves-effect waves-light btn-large" onclick="_moveTo(&quot;.section.contact&quot;)">Связаться</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="section about-me" id="section-about-me">
+          <div class="container">
+            <div class="row">
+              <div class="col m12 l4"><img class="responsive-img" src="/static/images/viktor-snow.jpg"></div>
+              <div class="col m12 l8">
+                <div class="card">
+                  <div class="card-content"><span class="card-title">Обо мне</span>
+                    <p>Этот ресурс в основном для людей, которые хотели бы работать со мной лично в разных ролях.</p>
+                    <p>Здравствуйте, меня зовут Виктор. Мне 33 года. Я открытый и спокойный человек. Я полагаю, вы не услышите хороших слов от людей обо мне. Может быть, я сумасшедший наркоман. Я сумасшедший трудоголик. Я живу ради результатов. Чтобы получить реальные результаты, вам нужно работать, а не ходить. Мне нравится ходить, потому что я понимаю, что мы люди, и все наши ресурсы ограничены, и нам нужно востановление. Мне нравятся сложные и сложные задачи. Я люблю конструирование, рисование, цветоводство. Я посещаю фитнес-клуб на регулярной основе.
+</p>
+                    <div class="professional">Я получил много профессионального опыта в различных областях деятельности. Сейчас я full-stack NodeJS разработчик. Мне нравится попроектое сотрудничество, справляюсь со всеми этапами разработки. Я не лучший и у меня есть свои недостатки. Мое основное приимущество в том, что у меня есть опыт и знания во многих областях знаний и я самостоятельно могу управлять и решать Ваши IT задачи с определенным уровнем качества самостоятельно.
+</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section blog" id="section-blog">
+          <h1 class="center-align">Блог</h1>
+          <div class="container">
+            <ul class="collection">
+              <li class="collection-item"><a href="http://vlikin.blogspot.com/2018/07/dedicated-library-js-scope-by-webpack.html">Выделенный scope JS библиотек, собранных Webpack(ом) для Drupal behaviour</a></li>
+              <li class="collection-item"><a href="http://vlikin.blogspot.com/2018/06/tdd-is-my-best-swagger.html">TDD - это лучший Swagger</a></li>
+              <li class="collection-item"><a href="http://vlikin.blogspot.com/2018/06/a-page-with-very-dynamic-page-with-many.html">Очень динамическая страница, построенная на компонентах Angular и других его библиотеках</a></li>
+              <li class="collection-item"><a href="http://vlikin.blogspot.com/2018/04/drupal-development-docker-compose.html">Drupal docker compose для разработки</a></li>
+              <li class="collection-item"><a href="http://vlikin.blogspot.com/2018/04/docker-based-production-environment.html">Production среда, работающая на docker</a></li>
+              <li class="collection-item"><a href="http://vlikin.blogspot.com/2018/03/development-approaches-of-shelepens.html">Особенности разработки персонального сайта Shelepen.com.ua</a></li>
+              <li class="collection-item"><a href="http://vlikin.blogspot.com/2018/03/shelepencomua-personal-site-again.html">Снова про персональный сайт Shelepen.com.ua.</a></li>
+              <li class="collection-item"><a href="http://vlikin.blogspot.com/2017/12/d8-test-task-display-filtered-list-of.html">Тестовое задание на Drupal 8. Отображения фильтруемого списка.</a></li>
+              <li class="collection-item"><a href="http://vlikin.blogspot.com/2017/07/ng4-test-lading-page.html">Ng4 тестовый проект Landing Page.</a></li>
+              <li class="collection-item"><a href="http://vlikin.blogspot.com/2017/07/viktor-fitness-continuos-integration.html">Viktor Fitness - Continuos Integration.</a></li>
+              <li class="collection-item"><a href="http://vlikin.blogspot.com/2017/06/drupal-8-test-task-for-daxx.html">Drupal 8 тестовое задание для комании DAXX</a></li>
+            </ul>
+          </div>
+          <div class="center-align"><a class="waves-effect waves-light btn-large" href="http://vlikin.blogspot.com/">ВСЕ СТАТЬИ</a></div>
+        </div>
+        <div class="section resume" id="section-resume">
+          <div class="container">
+            <div class="row">
+              <div class="col m12">
+                <h1 class="center-align">Резюме</h1>
+              </div>
+            </div>
+            <div class="col m12">
+              <ul class="collapsible popout" data-collapsible="accordion">
+                <li>
+                  <div class="collapsible-header">NodeJS разработчик - single player at NDA</div>
+                  <div class="collapsible-body">
+                    <div class="place-period">Киев - Август 2017 - Сейчас, 9 месяцев</div><span>Разрабатываю Web инструмент используя NodeJS, JavaScript технологии. Почти всё делаю самостоятельно: общаюсь со стороной бизнеса, определяю стек технологий, создаю архитектуру, разрабатываю как back-end, так и front-end подпроекты, разворачиваю проекты, мониторю, оптимизирую, модернизирую их. Основные технологии проекта завязаные на NodeJS, JavaScript, TypeScript, которые влияют как на back-end: inversify.js, lodash, mongodb, expressjs, mocha; так и на front-end: Angular4, Material Design, D3. Серверная часть разрабатывалася по TDD подходу. Все слои приложения покрыты e2e тестами. Что помогает мне проверять работоспособность на всех рабочих местах, генерировать видео отчет функциональности приложенияю Время от времени проверяю производительность, решаю связаные задачи. Иногда они непростые. Мне нравится этот проект!
+</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="collapsible-header">Drupal разработчик at Hypernaut</div>
+                  <div class="collapsible-body">
+                    <div class="place-period">Киев - Январь 2017 - Февраль 2017, 2 месяца</div><span>Работал над Drupal проектом в команде. Проект был особенный, который интегрировали с другим сервисом. Реализовывал бизнес функционал, который основывался на возможностях Drupal: Menu API, FAPI, много ajax форм, платежная система и много других обычных задач как для Drupal разработчика.
+</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="collapsible-header">Drupal разработчик at FFW</div>
+                  <div class="collapsible-body">
+                    <div class="place-period">Удаленно - Июнь 2016 - Октябрь 2016, 5 месяцев</div><span>Работал из дома в составе команды, распределенной по миру, в качестве разработчика поддержки. Одновременно работал над несколькими проектами. Проекты были большими порталами на базе Drupal 7 и Drupal 8. Процессы управления командой и проектами были реализованы хорошо. Также работал над редизайном проекта на Drupal в роли back-end разработчика, где использовали различные техники разработки. Вначале было сложно, а со временем намного упростилась работа, так как я себя чувствовал составляющей большой системы. Все стало предсказуемым с четко определенными рискамт. Здесь я получил хороший опыт работы в команде, знания по управлению командой и проектом.
+</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="collapsible-header">Magento разработчик at Speroteck</div>
+                  <div class="collapsible-body">
+                    <div class="place-period">Чернигов - Сентябрь 2015 - Апрель 2016, 8 месяцев</div><span>Должен был работать как Magento back-end разработчик, но выполнял разные задачи как разработчик. Как Magento разработчик: реализовывал процессы Экспорта/Импорта продуктов, интеграция с другими сервисами, решал проблемы с производительностью, изучал Magento2. Также изучал BigCommerce, SalesForce. Много времени работал на внутреннем проекте, использующем Silex, Symfony, Bootstrap.
+</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="collapsible-header">Javascript, PHP разработчик at Divan.TV</div>
+                  <div class="collapsible-body">
+                    <div class="place-period">Чернигов - Май 2015 - Июль 2015, 3 месяца</div><span>Разрабатывал HTML5 и гибридные приложения для Smart TV под разные телевизионные платформы. Перерабатывал существующий код, разрабатывал новый функционал. Приложение разрабатывалось, используя более базовые технологии, такие как HTML, CSS, JavaScript.
+</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="collapsible-header">Middle Drupal разработчик at Ciklum</div>
+                  <div class="collapsible-body">
+                    <div class="place-period">Киев - Октябрь 2014 - Декабрь 2014, 3 месяца</div><span>Работал в команде Drupal front-end и back-end разработчиков. Выполняли технические задачи, которые были спланированы менеджерами с датской стороны. Использовали их подходы и инструменты для построения проектов. Много использовали технологий, базирующихся на Panels.
+</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="collapsible-header">CMS разработчик at W3</div>
+                  <div class="collapsible-body">
+                    <div class="place-period">Харьков - Июнь 2014 - Июль 2015, 2 месяца</div><span>Работал на обратной связи на длительных Drupal проектах. Было несколько проектов, проблемы которых я изучал, предлагал их решение, реализовывал их. Работали по принципам AGILE, таким образом с клиентами работал через менеджера проектов.
+</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="collapsible-header">Ведущий Drupal PHP разработчик at Skelia</div>
+                  <div class="collapsible-body">
+                    <div class="place-period">Киев - Август 2012 - Июль 2013, 1 год</div><span>Был ответсвенен за поддержку текущего состояния проекта, разработку нового функционала. Проект был построен на Drupal 6 c использованием расширений от сообщества. Также много было разработано своих модулей, которые реализовывали бизнес логику. Здесь  я получил хорошую практику работы с иностранными клиентами, повысил уровень владения английским языком, ездил в деловые поездки за границу.
+</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="collapsible-header">Drupal разработчик at Adyax</div>
+                  <div class="collapsible-body">
+                    <div class="place-period">Киев - Март 2012 - Август 2012, 5 месяцев</div><span>Процесс разработки был похож на фабрику, каждый знал и выполнял свои обязаности. Использовали Drupal 6 и лучшие практики компании, которые были на то время. Был в команде, которая поддердживала и разрабатывала проекты для компании &quot;Johnson&amp;Johnson&quot;. Хороший пример разработки корпаративных продуктов, основаных на одной платформе: Drupal multisiting, Aegir. Здесь я получил огромный опыт работы в команде с распределенными обязанностями.
+</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="center-align"><a class="waves-effect waves-light btn-large" href="section.resume[lng].call_to_action.href">Посмотреть на LinkedIn</a></div>
+        </div>
+        <div class="section services" id="section-services">
+          <div class="container">
+            <div class="col m12">
+              <h1 class="center-align">Услуги</h1>
+            </div>
+            <div class="row">
+              <div class="col s12 m4 l4 card-wrapper">
+                <div class="card hoverable">
+                  <div class="card-image waves-effect waves-block waves-light"><img class="activator" src="/static/images/services/design.png"></div>
+                  <div class="card-content"><span class="card-title activator grey-text text-darken-4 truncate">Дизайн</span></div>
+                  <div class="card-reveal"><span class="card-title grey-text text-darken-4"><span class="center-align">Дизайн</span><i class="material-icons right">close</i></span>
+                    <p>Предоставляем свой опыт в разработке дизайна для Web и мобильных решений, которые нравятся вашим клиентам</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col s12 m4 l4 card-wrapper">
+                <div class="card hoverable">
+                  <div class="card-image waves-effect waves-block waves-light"><img class="activator" src="/static/images/services/prototype.png"></div>
+                  <div class="card-content"><span class="card-title activator grey-text text-darken-4 truncate">Прототипирование приложений</span></div>
+                  <div class="card-reveal"><span class="card-title grey-text text-darken-4"><span class="center-align">Прототипирование приложений</span><i class="material-icons right">close</i></span>
+                    <p>Создаем прототипы приложений, которые помогают уловить идею вашим инвесторам</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col s12 m4 l4 card-wrapper">
+                <div class="card hoverable">
+                  <div class="card-image waves-effect waves-block waves-light"><img class="activator" src="/static/images/services/web_app.png"></div>
+                  <div class="card-content"><span class="card-title activator grey-text text-darken-4 truncate">Интернет приложения</span></div>
+                  <div class="card-reveal"><span class="card-title grey-text text-darken-4"><span class="center-align">Интернет приложения</span><i class="material-icons right">close</i></span>
+                    <p>Проектируем и разрабатываем интернет приложения, заставляя работать ваши идеи</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col s12 m4 l4 card-wrapper">
+                <div class="card hoverable">
+                  <div class="card-image waves-effect waves-block waves-light"><img class="activator" src="/static/images/services/mobile_app.png"></div>
+                  <div class="card-content"><span class="card-title activator grey-text text-darken-4 truncate">Мобильные приложения</span></div>
+                  <div class="card-reveal"><span class="card-title grey-text text-darken-4"><span class="center-align">Мобильные приложения</span><i class="material-icons right">close</i></span>
+                    <p>Создаем родные и кросс-платформенные iOS, Android приложения, делая ваш бизнес мобильным</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col s12 m4 l4 card-wrapper">
+                <div class="card hoverable">
+                  <div class="card-image waves-effect waves-block waves-light"><img class="activator" src="/static/images/services/dev_ops.png"></div>
+                  <div class="card-content"><span class="card-title activator grey-text text-darken-4 truncate">Dev Ops</span></div>
+                  <div class="card-reveal"><span class="card-title grey-text text-darken-4"><span class="center-align">Dev Ops</span><i class="material-icons right">close</i></span>
+                    <p>Автоматизируем процесс доставки измений и изменения инфраструктуры, ускоряя процесс обновления продукта</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col s12 m4 l4 card-wrapper">
+                <div class="card hoverable">
+                  <div class="card-image waves-effect waves-block waves-light"><img class="activator" src="/static/images/services/qa.png"></div>
+                  <div class="card-content"><span class="card-title activator grey-text text-darken-4 truncate">Тестирование</span></div>
+                  <div class="card-reveal"><span class="card-title grey-text text-darken-4"><span class="center-align">Тестирование</span><i class="material-icons right">close</i></span>
+                    <p>Обеспечиваем переодический выход приложения, получая позитивный отзыв от клиентов</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section portfolio" id="section-portfolio">
+          <h1 class="center-align">Портфолио</h1>
+          <div class="container">
+            <ul class="collection">
+              <li class="collection-item"><a href="http://vlikin.blogspot.com/2019/06/drupal-8-based-marketing-site-for-diffy.html">Маркетинговый сайт для Diffy, визуального инстумента тестирования.</a></li>
+              <li class="collection-item"><a href="http://vlikin.blogspot.com/2019/04/front-end-development-kit-hosted-on.html">Набор Front разработчика, который может размещаться на страницах github pages</a></li>
+              <li class="collection-item"><a href="http://vlikin.blogspot.com/2019/04/internet-trading-teaching-platform.html">Обучающая платформа электронной торговли</a></li>
+              <li class="collection-item"><a href="http://vlikin.blogspot.com/2019/04/application-policy-manager-mvp-review.html">Приложение управления правами доступа. MVP просмотр.</a></li>
+              <li class="collection-item"><a href="http://vlikin.blogspot.com/2018/03/shelepencomua-personal-site-again.html">Shelepen.com.ua персональный сайт.</a></li>
+            </ul>
+          </div>
+          <div class="center-align"><a class="waves-effect waves-light btn-large" href="http://vlikin.blogspot.com/search/label/portfolio">ВСЁ ПОРТФОЛИО</a></div>
+        </div>
+        <div class="section contact" id="section-contact">
+          <div class="section-container">
+            <h1 class="center-align">Контакты</h1>
+            <h2 class="center-align">Чудеса сбываются</h2>
+            <div class="columns">
+              <div class="info-block">
+                <h5>Персональные</h5>
+                <div class="phone">+380958464017</div>
+                <div class="email">victor.shelepen@gmail.com</div>
+              </div>
+              <div class="social-block">
+                <div class="icons-container"><a class="linkedin" target="_blank" href="https://www.linkedin.com/in/victor-shelepen-0a7962103/"></a><a class="facebook" target="_blank" href="https://www.facebook.com/shelepen.viktor"></a><a class="twitter" target="_blank" href="https://twitter.com/VictorShelepen"></a><a class="github" target="_blank" href="https://github.com/victor-shelepen"></a><a class="drupal" target="_blank" href="https://www.drupal.org/u/victor-shelepen"></a><a class="stackoverflow" target="_blank" href="https://stackoverflow.com/users/1501573/victor-shelepen"></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="page-footer">
+        <div class="container hide-on-med-and-down">
+          <div class="row">
+            <div class="col offset-l2 s12">
+              <div class="menu"><a class="waves-effect waves-light btn" onclick="_moveTo('.section.hero')">Домашняя</a><a class="waves-effect waves-light btn" onclick="_moveTo('.section.about-me')">Обо мне</a><a class="waves-effect waves-light btn" onclick="_moveTo('.section.resume')">Резюме</a><a class="waves-effect waves-light btn" onclick="_moveTo('.section.services')">Услуги</a><a class="waves-effect waves-light btn" onclick="_moveTo('.section.contact')">Контакты</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container center-align">Работает 2017-2018</div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
+<link href="../static/css/style.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Play:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+<script src="../static/js/vendor.js"></script>
+<script src="../static/js/app.bundle.js"></script>

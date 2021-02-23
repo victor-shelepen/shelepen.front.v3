@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+    <head>
+      <style type="text/css">
+        body, html {
+          height: 100%;
+        }
+        
+        .app-loading {
+          background: #162337;
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          height: 100%;
+        }
+        
+        .app-loading .spinner {
+          height: 200px;
+          width: 200px;
+          width: 200px;
+          animation: rotate 2s linear infinite;
+          transform-origin: center center;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin: auto;
+        }
+        
+        .app-loading .spinner .path {
+          stroke-dasharray: 1, 200;
+          stroke-dashoffset: 0;
+          animation: dash 1.5s ease-in-out infinite;
+          stroke-linecap: round;
+          stroke: #ddd;
+        }
+        
+        @keyframes rotate {
+          100% {
+            transform: rotate(360deg);
+          }
+        }
+        
+        @keyframes dash {
+          0% {
+            stroke-dasharray: 1, 200;
+            stroke-dashoffset: 0;
+          }
+          50% {
+            stroke-dasharray: 89, 200;
+            stroke-dashoffset: -35px;
+          }
+          100% {
+            stroke-dasharray: 89, 200;
+            stroke-dashoffset: -124px;
+          }
+        }
+        
+        .app-loading .logo {
+          width: 100px;
+          height: 100px;
+          background: url("/static/images/logo-loading.png") center center no-repeat;
+          background-size: contain;
+        }
+        
+      </style>
+    </head>
+  </head>
+  <body>
+    <div class="app-loading">
+      <div class="logo"></div>
+      <svg class="spinner" viewBox="25 25 50 50">
+        <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle>
+      </svg>
+    </div>
+    <div id="outer-body">
+      <div class="navbar-fixed" id="header-section">
+        <nav>
+          <div class="nav-wrapper"><a class="link-menu button-collapse" href="#" data-activates="slide-out"><i class="material-icons">menu</i></a><a class="brand-logo" href="#"><i class="large material-icons logo">timelapse</i></a>
+            <ul class="right hide-on-med-and-down" id="nav-mobile">
+              <li><a class="link-home" href="#section-hero">Home</a></li>
+              <li><a class="link-aboutMe" href="#section-about-me">About Me</a></li>
+              <li><a class="link-blog" href="#section-blog">Blog</a></li>
+              <li><a class="link-resume" href="#section-resume">Resume</a></li>
+              <li><a class="link-services" href="#section-services">Services</a></li>
+              <li><a class="link-services" href="#section-portfolio">Portfolio</a></li>
+              <li><a class="link-contacts" href="#section-contact">Contacts</a></li>
+              <li><a class="link-en" href="/en">Eng</a></li>
+              <li><a class="link-ru" href="/ru">Rus</a></li>
+              <li><a class="link-ua" href="/ua">Ua</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <ul class="side-nav" id="slide-out">
+        <li>
+          <div class="user-view">
+            <div class="background"><img src="/static/images/slide-out-bg.jpg"></div><a href="#!user"><img class="circle" src="/static/images/face-64x64.jpg"><a href="#!name"><span class="white-text name">Viktor</span></a><a href="#!email"><span class="white-text email">viktor.likin@gmail.com</span></a></a>
+          </div>
+        </li>
+        <li>
+          <ul class="menu-items">
+            <li><a class="link-home sidenav-close" href="#section-hero">Home</a></li>
+            <li><a class="link-aboutMe sidenav-close" href="#section-about-me">About Me</a></li>
+            <li><a class="link-blog sidenav-close" href="#section-blog">Blog</a></li>
+            <li><a class="link-resume sidenav-close" href="#section-resume">Resume</a></li>
+            <li><a class="link-services sidenav-close" href="#section-services">Services</a></li>
+            <li><a class="link-services sidenav-close" href="#section-portfolio">Portfolio</a></li>
+            <li><a class="link-contacts sidenav-close" href="#section-contact">Contacts</a></li>
+            <li><a class="link-en" href="/en">Eng</a></li>
+            <li><a class="link-ru" href="/ru">Rus</a></li>
+            <li><a class="link-ua" href="/ua">Ua</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div id="section-container">
+        <div class="section hero" id="section-hero">
+          <div class="card blue-grey darken-1 hoverable">
+            <div class="card-content white-text center-align"><span class="card-title">Viktor Shelepen</span>
+              <p>Fullstack Web Developer</p>
+              <div class="card-action"><a class="waves-effect waves-light btn-large" onclick="_moveTo(&quot;.section.contact&quot;)">Contact Me</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="section about-me" id="section-about-me">
+          <div class="container">
+            <div class="row">
+              <div class="col m12 l4"><img class="responsive-img" src="/static/images/viktor-snow.jpg"></div>
+              <div class="col m12 l8">
+                <div class="card">
+                  <div class="card-content"><span class="card-title">About me</span>
+                    <p>This resource is mostly for people who would like working with me personally in different roles.
+</p>
+                    <p>Hello, my name is Victor. I am 33 years old. I am an open-minded and easy going person. I presume you will not hear good words from people about me. Maybe I am crazy dope. I am crazy labour. I live for results. To get real results you need work not walk. I like walking because I understand that we are humans and all our resources are limited and we need recovery. I like challenging and tough tasks. I like engineering, painting, flowering. I visit a fitness club on a regular basis.
+</p>
+                    <div class="professional">I've got very wide professional experience in different branches. Now I am full-stack NodeJS developer. I like projects jobs. I handle all software development stages. I am not the best I do not want to do it so. Also, I have own disadvantages. My real advantage for you is that I am multi-professional, multi-technological employer in the single person that can handle and manage your IT problems with specified quality.
+</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section blog" id="section-blog">
+          <h1 class="center-align">Blog</h1>
+          <div class="container">
+            <ul class="collection">
+              <li class="collection-item"><a href="http://vlikin.blogspot.com/2018/07/dedicated-library-js-scope-by-webpack.html">Dedicated library JS scope by Webpack for a Drupal behaviour</a></li>
+              <li class="collection-item"><a href="http://vlikin.blogspot.com/2018/06/tdd-is-my-best-swagger.html">TDD is my best Swagger</a></li>
+              <li class="collection-item"><a href="http://vlikin.blogspot.com/2018/06/a-page-with-very-dynamic-page-with-many.html">Very dynamic page with many components based on Angular surrounded technologies</a></li>
+              <li class="collection-item"><a href="http://vlikin.blogspot.com/2018/04/drupal-development-docker-compose.html">Drupal development docker compose</a></li>
+              <li class="collection-item"><a href="http://vlikin.blogspot.com/2018/04/docker-based-production-environment.html">Docker based production environment</a></li>
+              <li class="collection-item"><a href="http://vlikin.blogspot.com/2018/03/development-approaches-of-shelepens.html">Development approaches of Shelepen's personal site</a></li>
+              <li class="collection-item"><a href="http://vlikin.blogspot.com/2018/03/shelepencomua-personal-site-again.html">Shelepen.com.ua personal site again</a></li>
+              <li class="collection-item"><a href="http://vlikin.blogspot.com/2017/12/d8-test-task-display-filtered-list-of.html">D8 Test Task. Display filtered list of items.</a></li>
+              <li class="collection-item"><a href="http://vlikin.blogspot.com/2017/07/ng4-test-landing-page.html">Ng4 Test Landing Page</a></li>
+              <li class="collection-item"><a href="http://vlikin.blogspot.com/2017/07/viktor-fitness-continuos-integration.html">Viktor Fitness - Continuos Integration</a></li>
+              <li class="collection-item"><a href="http://vlikin.blogspot.com/2017/06/drupal-8-test-task-for-daxx.html">Drupal 8 Test Task for DAXX</a></li>
+            </ul>
+          </div>
+          <div class="center-align"><a class="waves-effect waves-light btn-large" href="http://vlikin.blogspot.com/">ALL ARTICLES</a></div>
+        </div>
+        <div class="section resume" id="section-resume">
+          <div class="container">
+            <div class="row">
+              <div class="col m12">
+                <h1 class="center-align">Resume</h1>
+              </div>
+            </div>
+            <div class="col m12">
+              <ul class="collapsible popout" data-collapsible="accordion">
+                <li>
+                  <div class="collapsible-header">NodeJS developer - single player at NDA</div>
+                  <div class="collapsible-body">
+                    <div class="place-period">Kyiv - August 2017 - Now, 9 months</div><span>I am developing a webtool using NodeJS, JavaScript technologies. I do almost everything by myself: work with the business side, plan the technology stack, create the architecture, develop both front-end back-end subprojects, deploy the projects, monitor the projects, optimize and modernate them. The main base coupled technologies are NodeJS, JavaScript, TypeScript that influences both to back-end: inversify.js, lodash, mongodb, expressjs, mocha; front-end: Angular4, Material Design, D3. The server side is developed using TDD approach. The whole layers application are tested by protractor e2e tests. It helps me to check workability on stages and create video reports of the application functionality. Time to time I check performance and resolve related issues. Sometimes they are challenging. I like the project :)
+</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="collapsible-header">Drupal developer at Hypernaut</div>
+                  <div class="collapsible-body">
+                    <div class="place-period">Kyiv - January 2017 - February 2017, 2 months</div><span>I worked on a Drupal project as a part of the team. It was a specific project that was integrated with another service. I did a lot of custom functionality, those were based on Drupal framework: Menu API, FAPI, a lot of ajax forms, a payment system, of course another stuff that was common for a drupal developer.
+</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="collapsible-header">Drupal developer at FFW</div>
+                  <div class="collapsible-body">
+                    <div class="place-period">Remote - June 2016 - October 2016, 5 months</div><span>I worked in the distributed team from home as a support developer. I worked with few projects at once. These projects were big portals based on Drupal 7 and Drupal 8. Team and project management processes were implemented properly. Also I got a Drupal 7 project for redesigning. I worked as a back-end developer. Here we used a lot of different techniques of project development. At first it was hard then it became easier. I felt as an item of a big system. Everything became predictable with strict risks. I’ve got good and wide experience of working in the team and knowledge of management (team, project, code, ...) here.
+</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="collapsible-header">Magento developer at Speroteck</div>
+                  <div class="collapsible-body">
+                    <div class="place-period">Chernigov - September 2015 - April 2016, 8 months</div><span>I had to work as a Magento back-end Developer but I did everything related with development. I worked with Magento: Export/Import product processes, Integration with third-party services, resolved Magento performance issues, studied Magento2. Also I studied BigCommerce, SalesForce there. A lot of time I worked with an internal project that was built on technologies: Silex, Symfony, Bootstrap.
+</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="collapsible-header">Javascript, PHP developer at Divan.TV</div>
+                  <div class="collapsible-body">
+                    <div class="place-period">Chernigov - May 2015 - July 2015, 3 months</div><span>I developed the HTML5 based, hybrid application for Smart TV for different platforms. I refactored the existed code base and developed new functionality in the existing application. During the period I was using low level Web technologies such as HTML, CSS, JavaScript.
+</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="collapsible-header">Middle Drupal developer at Ciklum</div>
+                  <div class="collapsible-body">
+                    <div class="place-period">Kyiv - October 2014 - December 2014, 3 months</div><span>I worked in a team of Drupal front-end and back-end developers. I was a member of a team and resolved tasks, planned by our manager from Denmark side. I used their approaches and tools to build projects. We used a lot of Panels based solutions.
+</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="collapsible-header">CMS Developer at W3</div>
+                  <div class="collapsible-body">
+                    <div class="place-period">Charkov - June 2014 - July 2015, 2 months</div><span>I worked at client feedbacks of the existed Drupal based, long term projects. There were few projects, where I investigated problems, proposed solutions, implemented these solutions. I did not work with clients directly. We used AGILE - the management style of the project. So I worked with the project manager tightly.
+</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="collapsible-header">Senior Drupal PHP Developer at Skelia</div>
+                  <div class="collapsible-body">
+                    <div class="place-period">Kyiv - August 2012 - July 2013, 1 year</div><span>I was responsible for supporting of the current state of code, fixing, developing new features. The project was built on Drupal 6, using another contribute modules. There were built a lot of custom modules these represented business processes managing different kinds of sport. I got the practice in cooperating with foreign customers. It made my English level higher. I traveled abroad for bussiness.
+</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="collapsible-header">Drupal developer at Adyax</div>
+                  <div class="collapsible-body">
+                    <div class="place-period">Kyiv - March 2012 - August 2012, 5 months</div><span>The development process looked as a factory. Everybody had their own responsibilities. We used Drupal 6 and the best practices, that company had for this time. I was a developer in the team, that supported “Johnson&amp;Johnson” projects. It was a good example of corporate products, many small projectes related with each other and based on common platform (Drupal multisiting, Aegir, another common performance technologies). I received the huge experience how to work in a team with separate responsibilities, control results.
+</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="center-align"><a class="waves-effect waves-light btn-large" href="section.resume[lng].call_to_action.href">Look at LinkedIn</a></div>
+        </div>
+        <div class="section services" id="section-services">
+          <div class="container">
+            <div class="col m12">
+              <h1 class="center-align">Services</h1>
+            </div>
+            <div class="row">
+              <div class="col s12 m4 l4 card-wrapper">
+                <div class="card hoverable">
+                  <div class="card-image waves-effect waves-block waves-light"><img class="activator" src="/static/images/services/design.png"></div>
+                  <div class="card-content"><span class="card-title activator grey-text text-darken-4 truncate">Design</span></div>
+                  <div class="card-reveal"><span class="card-title grey-text text-darken-4"><span class="center-align">Design</span><i class="material-icons right">close</i></span>
+                    <p>We deliver a user-friendly mobile design and web experience to make your clients love it.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col s12 m4 l4 card-wrapper">
+                <div class="card hoverable">
+                  <div class="card-image waves-effect waves-block waves-light"><img class="activator" src="/static/images/services/prototype.png"></div>
+                  <div class="card-content"><span class="card-title activator grey-text text-darken-4 truncate">Software prototyping</span></div>
+                  <div class="card-reveal"><span class="card-title grey-text text-darken-4"><span class="center-align">Software prototyping</span><i class="material-icons right">close</i></span>
+                    <p>We create clickable apps prototypes to help you pitch your ideas to investors.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col s12 m4 l4 card-wrapper">
+                <div class="card hoverable">
+                  <div class="card-image waves-effect waves-block waves-light"><img class="activator" src="/static/images/services/web_app.png"></div>
+                  <div class="card-content"><span class="card-title activator grey-text text-darken-4 truncate">Web apps</span></div>
+                  <div class="card-reveal"><span class="card-title grey-text text-darken-4"><span class="center-align">Web apps</span><i class="material-icons right">close</i></span>
+                    <p>We design and develop custom web apps to make your ideas work.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col s12 m4 l4 card-wrapper">
+                <div class="card hoverable">
+                  <div class="card-image waves-effect waves-block waves-light"><img class="activator" src="/static/images/services/mobile_app.png"></div>
+                  <div class="card-content"><span class="card-title activator grey-text text-darken-4 truncate">Mobile apps</span></div>
+                  <div class="card-reveal"><span class="card-title grey-text text-darken-4"><span class="center-align">Mobile apps</span><i class="material-icons right">close</i></span>
+                    <p>We create native and cross platform iOS and Android apps to make your business mobile.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col s12 m4 l4 card-wrapper">
+                <div class="card hoverable">
+                  <div class="card-image waves-effect waves-block waves-light"><img class="activator" src="/static/images/services/dev_ops.png"></div>
+                  <div class="card-content"><span class="card-title activator grey-text text-darken-4 truncate">Dev Ops</span></div>
+                  <div class="card-reveal"><span class="card-title grey-text text-darken-4"><span class="center-align">Dev Ops</span><i class="material-icons right">close</i></span>
+                    <p>We automate delivery process and infrastructure changes to speed up time-to-market.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col s12 m4 l4 card-wrapper">
+                <div class="card hoverable">
+                  <div class="card-image waves-effect waves-block waves-light"><img class="activator" src="/static/images/services/qa.png"></div>
+                  <div class="card-content"><span class="card-title activator grey-text text-darken-4 truncate">QA</span></div>
+                  <div class="card-reveal"><span class="card-title grey-text text-darken-4"><span class="center-align">QA</span><i class="material-icons right">close</i></span>
+                    <p>We ensure the timely release of working software to get a positive users feedback.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section portfolio" id="section-portfolio">
+          <h1 class="center-align">Portfolio</h1>
+          <div class="container">
+            <ul class="collection">
+              <li class="collection-item"><a href="http://vlikin.blogspot.com/2019/06/drupal-8-based-marketing-site-for-diffy.html">Drupal 8 based marketing site for Diffy that is a visual regression testing tool</a></li>
+              <li class="collection-item"><a href="http://vlikin.blogspot.com/2019/04/front-end-development-kit-hosted-on.html">Front end development KIT hosted on github pages</a></li>
+              <li class="collection-item"><a href="http://vlikin.blogspot.com/2019/04/internet-trading-teaching-platform.html">Internet trading teaching platform</a></li>
+              <li class="collection-item"><a href="http://vlikin.blogspot.com/2019/04/application-policy-manager-mvp-review.html">Application Policy Manager. MVP review.</a></li>
+              <li class="collection-item"><a href="http://vlikin.blogspot.com/2018/03/shelepencomua-personal-site-again.html">Shelepen.com.ua Personal Site again</a></li>
+            </ul>
+          </div>
+          <div class="center-align"><a class="waves-effect waves-light btn-large" href="http://vlikin.blogspot.com/search/label/portfolio">ALL PORTFOLIO</a></div>
+        </div>
+        <div class="section contact" id="section-contact">
+          <div class="section-container">
+            <h1 class="center-align">Contacts</h1>
+            <h2 class="center-align">Magic seems happened</h2>
+            <div class="columns">
+              <div class="info-block">
+                <h5>Personal</h5>
+                <div class="phone">+380958464017</div>
+                <div class="email">victor.shelepen@gmail.com</div>
+              </div>
+              <div class="social-block">
+                <div class="icons-container"><a class="linkedin" target="_blank" href="https://www.linkedin.com/in/victor-shelepen-0a7962103/"></a><a class="facebook" target="_blank" href="https://www.facebook.com/shelepen.viktor"></a><a class="twitter" target="_blank" href="https://twitter.com/VictorShelepen"></a><a class="github" target="_blank" href="https://github.com/victor-shelepen"></a><a class="drupal" target="_blank" href="https://www.drupal.org/u/victor-shelepen"></a><a class="stackoverflow" target="_blank" href="https://stackoverflow.com/users/1501573/victor-shelepen"></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="page-footer">
+        <div class="container hide-on-med-and-down">
+          <div class="row">
+            <div class="col offset-l2 s12">
+              <div class="menu"><a class="waves-effect waves-light btn" onclick="_moveTo('.section.hero')">Home</a><a class="waves-effect waves-light btn" onclick="_moveTo('.section.about-me')">About Me</a><a class="waves-effect waves-light btn" onclick="_moveTo('.section.resume')">Resume</a><a class="waves-effect waves-light btn" onclick="_moveTo('.section.services')">Services</a><a class="waves-effect waves-light btn" onclick="_moveTo('.section.contact')">Contacts</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container center-align">Works 2017-2018</div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
+<link href="../static/css/style.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Play:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+<script src="../static/js/vendor.js"></script>
+<script src="../static/js/app.bundle.js"></script>
